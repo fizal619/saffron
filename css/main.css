@@ -87,7 +87,7 @@ nav a:hover {
 }
 
 .card-custom {
-  width: 80px;
+  width: 40px;
   text-align: center;
 }
 
@@ -152,14 +152,33 @@ nav a:hover {
   width: 100px;
 }
 
-.product-card button {
+button.btn-outline-primary {
   color: #0a0a0a;
   border-color: #0a0a0a;
 }
 
-.product-card button:hover {
+button.btn-outline-primary:hover {
   color: white;
   border-color: #0a0a0a;
   background-color: #0a0a0a;
 }
 
+.contact-container h3, .contact-container h5 {
+  text-align: left;
+}
+
+.contact-container img {
+  width: 40px;
+}
+
+.contact-container textarea {
+  width: 100%;
+}
+
+.cover {
+  width: 100%;
+  background-position: center;
+  background-image: url('/images/cover4.jpg');
+  background-size: cover;
+  height: 300px;
+}
