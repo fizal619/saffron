@@ -100,8 +100,8 @@ nav a:hover {
 }
 
 .product-card {
-  height: 100px;
   width: 100%;
+  height: 100px;
   padding: 10px 20px;
   border-radius: 3px;
   background-color: whitesmoke;
@@ -115,6 +115,7 @@ nav a:hover {
 
 .product-card .desc {
   font-weight: 300;
+  font-size: 0.8em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -181,4 +182,37 @@ button.btn-outline-primary:hover {
   background-image: url('/images/cover4.jpg');
   background-size: cover;
   height: 300px;
+}
+
+
+.basicLightbox--visible div .image {
+  background-position: center;
+  background-size: cover;
+}
+
+.basicLightbox--visible div {
+  background: whitesmoke;
+  border-radius: 2px;
+
+}
+
+.product-modal-content {
+  padding: 10px;
+}
+
+.product-modal-content label {
+  padding-right: 5px;
+}
+
+.product-modal-content img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.product-modal-content .qty {
+  width: 100px;
+}
+
+.product-modal-content textarea {
+  width: 100%;
 }

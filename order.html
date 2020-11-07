@@ -47,14 +47,15 @@ permalink: /order
     <br>
     <div class="row">
       {%- for item in category.products -%}
-        {%- assign product = site.products | where: "name", item | first  -%}
+        {%- assign product = site.products | where: "title", item | first  -%}
         {% assign productFilename = product.image | split:"/" | last  %}
         <div class="col-xs-12 col-md-6">
-          <div class="product-card">
+          <div id="{{ product.slug }}-card" class="product-card">
             <span class="price">${{product.price}}</span>
             {{ productFilename | append:' [resize:200x200]' | image }}
-            <p class="title">{{product.name}}</p>
+            <p class="title">{{product.title}}</p>
             <p class="desc">{{product.description}}</p>
+            {%- include product_modal.html -%}
           </div>
         </div>
       {%- endfor -%}

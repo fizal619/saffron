@@ -1,5 +1,5 @@
 ---
-name: Chicken Samosas
+title: Chicken Samosas
 image: /uploads/chicken-samosas.jpg
 price: 2,500
 options:

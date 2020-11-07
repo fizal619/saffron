@@ -1,5 +1,5 @@
 const homeContainer = document.querySelector(".home-container");
-
+const bag = []
 if (homeContainer) {
   homeContainer.style.backgroundImage = "url('/images/cover1.jpg')";
   let counter = 2;
@@ -10,4 +10,10 @@ if (homeContainer) {
     homeContainer.style.backgroundImage = "url('/images/cover"+counter+".jpg')";
     counter++;
   }, 15000);
+}
+
+function addToBagHandler(e) {
+  e.preventDefault();
+  alert("works!");
+  e.target.reset();
 }
