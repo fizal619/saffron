@@ -18,6 +18,10 @@ collections:
       - label: Image
         widget: image
         name: image
+      - label: Options
+        name: options
+        widget: list
+        allow_add: true
       - {label: "Description", name: "description", widget: "string", required: false}
 
   - name: categories
