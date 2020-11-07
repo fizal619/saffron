@@ -1,0 +1,39 @@
+backend:
+  name: github
+  repo: fizal619/saffron
+  branch: master
+  site_domain: saffrongy.netlify.app
+
+local_backend: true
+
+media_folder: "images/upload"
+
+collections:
+  - name: products # Used in routes, e.g., /admin/collections/blog
+    label: Product # Used in the UI
+    folder: "_products/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    summary: "{{title}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: Name, name: name, widget: string}
+      - label: Image
+        widget: image
+        name: image
+      - {label: "Description", name: "description", widget: "string", required: false}
+
+  - name: categories
+    label: Category
+    folder: "_categories/"
+    create: true
+    fields:
+      - label: Display Name
+        name: name
+        required: true
+      - label: Products
+        name: products
+        widget: relation
+        collection: products
+        value_field: name
+        multiple: true
+        search_fields: [ "name" ]
+        display_fields: [ "name", "description" ]

@@ -1,0 +1,55 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.6.0
+        with:
+          access_token: ${{ secrets.JEKYLL_PAT }}
+
+      - uses: actions/checkout@v2
+
+        # Use GitHub Actions' cache to shorten build times and decrease load on servers
+      - uses: actions/cache@v2
+        with:
+          path:  vendor/bundle/ruby/2.7.1/gems
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Deal with deps
+        run: |-
+          echo "DEBUG >"
+          sudo apt-get install libmagickwand-dev
+          cat /etc/ImageMagick-6/policy.xml | sed 's/none/read,write/g' | sudo tee /etc/ImageMagick-6/policy.xml
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+
+      - run: |-
+          bundle install --jobs 4 --retry 3
+        # Use GitHub Actions' cache to shorten build times and decrease load on servers
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle/ruby/2.7.1/gems
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - run: bundle exec jekyll build
+
+      - run: ls
+
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@master
+        env:
+          EMAIL: fizal.sarif@gmail.com
+          GH_TOKEN: ${{ secrets.JEKYLL_PAT }}
+          BUILD_DIR: _site
+          CNAME: saffroncateringgy.com
+          JEKYLL_SITE: YES
