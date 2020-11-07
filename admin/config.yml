@@ -13,7 +13,6 @@ collections:
     label: Product # Used in the UI
     folder: "_products/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    summary: "{{title}}"
     fields: # The fields for each document, usually in front matter
       - {label: Name, name: name, widget: string}
       - label: Image
