@@ -1,0 +1,57 @@
+---
+layout: default
+permalink: /order
+---
+<br>
+<br>
+<br>
+<div class="container order-container">
+  <h1>Order Online</h1>
+  <br>
+  <div class="info">
+    <div class="card-custom">
+      <p><strong>Step 1</strong></p>
+      <img src="/images/bag.png" alt="bag"/>
+      <p>Submit</p>
+    </div>
+
+    <div class="card-custom">
+      <p><strong>Step 2</strong></p>
+      <img src="/images/phone.png" alt="phone"/>
+      <p>Confirm</p>
+    </div>
+
+    <div class="card-custom">
+      <p><strong>Step 3</strong></p>
+      <img src="/images/truck.png" alt="truck"/>
+      <p>Delivery</p>
+    </div>
+  </div>
+
+  <br>
+
+  {%- for category in site.categories -%}
+    <h2>{{ category.name }}</h2>
+    <br>
+    <div class="row">
+      {%- for item in category.products -%}
+        {%- assign product = site.products | where: "name", item | first  -%}
+        {% assign productFilename = product.image | split:"/" | last  %}
+        <div class="col-xs-12 col-md-6">
+          <div class="product-card">
+            <span class="price">${{product.price}}</span>
+            {{ productFilename | append:' [resize:200x200]' | image }}
+            <p class="title">{{product.name}}</p>
+            <p class="desc">{{product.description}}</p>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endfor -%}
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+
+    </div>
+  </div>
+
+</div>
