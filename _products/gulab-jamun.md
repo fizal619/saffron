@@ -1,6 +1,6 @@
 ---
 title: Gulab jamun
-image: /images/upload/pxl_20200923_133821106.portrait.jpg
+price: $1200
+image: /images/upload/gulab-jamun.png
 description: 12 pieces (gluten-free, contains dairy)
-price: 0
 ---
