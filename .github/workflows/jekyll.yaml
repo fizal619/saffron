@@ -19,7 +19,7 @@ jobs:
         # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - uses: actions/cache@v2
         with:
-          path:  vendor/bundle/ruby/2.7.1/gems
+          path:  vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
@@ -33,11 +33,11 @@ jobs:
           ruby-version: '2.7'
 
       - run: |-
-          bundle install --jobs 4 --retry 3
+          bundle install --path vendor/bundle --jobs 4 --retry 3
         # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - uses: actions/cache@v2
         with:
-          path: vendor/bundle/ruby/2.7.1/gems
+          path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
