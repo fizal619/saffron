@@ -2,8 +2,8 @@
   document.querySelector("#{{ category.slug }}-{{ product.slug }}-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
-        <div id="{{ product.slug }}-modal">
-          {% asset '{{productFilename}}' magick:resize='400' magick:crop='400x300+0+0' magick:gravity=center %}
+        <div id="{{ product.slug }}-modal" class="product-modal-container">
+          {% asset '{{productFilename}}' magick:resize='400' magick:crop='400x300+0+0' magick:gravity='center' %}
           <br>
           <div class="product-modal-content">
             <strong>
@@ -11,10 +11,12 @@
             </strong>
             <form id="{{product-slug}}-form">
               {%- for item in product.options -%}
-                <input required type="radio" name="option" value="{{item}}">
-                <label for="{{item}}"> {{item}} </label>
+                <input required type="radio" id="{{item | replace: ' ', ''}}" name="option" value="{{item}}">
+                <label class="label" for="{{item | replace: ' ', ''}}"> {{item}} </label>
               {%- endfor -%}
-              <br>
+              {% if product.options.size > 0 %}
+                <br>
+              {% endif %}
               <label for="qty">Quantity:</label>
               <input required value="1" min="1" type="number" name="qty" class="qty" />
               <br>
