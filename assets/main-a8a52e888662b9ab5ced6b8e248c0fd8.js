@@ -44,9 +44,21 @@ function addToBagHandler(e) {
   bag[Date.now()] = itemObj;
   Toastify({
     text: "Item added to bag",
-    duration: 3000
+    duration: 2000,
+    stopOnFocus: true,
+    backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
   }).showToast();
   e.target.parentElement.querySelector(".closeBtn").click();
+
+  bagIcon.style.animation = "";
+  setTimeout(function(){
+    bagIcon.style.animation = "wiggle 0.3s ease-in-out forwards";
+    setTimeout(function(){
+      bagIcon.style.animation = "";
+
+    }, 1000);
+  }, 2000);
+
   e.target.reset();
   renderBag();
 }

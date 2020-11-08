@@ -138,7 +138,7 @@ nav a:hover {
 .product-card .price {
   position: absolute;
   right: 25px;
-  top: 5px;
+  top: 10px;
   z-index: 10;
   background-color: rgba(245,245,245,0.8);
   padding: 2px 4px;
@@ -226,9 +226,9 @@ button.btn-outline-primary:hover {
   position: fixed;
   z-index: 11;
   background-color: whitesmoke;
-  bottom: 10px;
+  top: 40px;
   right: 10px;
-  width: 80px;
+  width: 50px;
   border-radius: 50%;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
@@ -236,21 +236,25 @@ button.btn-outline-primary:hover {
 #bag-icon:hover {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
   cursor: pointer;
-  animation: wiggle 0.3s linear forwards;
+  animation: wiggle 0.3s ease-in-out forwards;
 }
 
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
+    right: 10px;
   }
   25% {
     transform: rotate(-10deg);
+    right: 15px;
   }
   50% {
     transform: rotate(0deg);
+    right: 15px;
   }
   75% {
     transform: rotate(10deg);
+    right: 10px;
   }
 }
 
