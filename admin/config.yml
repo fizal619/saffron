@@ -39,7 +39,7 @@ collections:
         name: products
         widget: relation
         collection: products
-        value_field: name
+        value_field: title
         multiple: true
-        search_fields: [ "name" ]
-        display_fields: [ "name", "description" ]
+        search_fields: [ "title" ]
+        display_fields: [ "title" ]
