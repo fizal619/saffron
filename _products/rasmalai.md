@@ -1,6 +1,7 @@
 ---
 title: Rasmalai
-image: /images/upload/1472408475848.jpg
+price: $10,000
+image: /images/upload/rasmalai.png
+options: []
 description: 24 pieces (gluten-free, contains milks & nuts)
-price: 0
 ---
