@@ -221,6 +221,202 @@
     });
 </script>
 </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="mithai-card" class="product-card">
+            <span class="price">$0</span>
+            <img src="/assets/img_20171206_085006-200x200-2b144a321544a15731fc3f5eec16927a.jpg">
+            <p class="title">Mithai</p>
+            <p class="desc">12 pieces (contains wheat and dairy)</p><script>
+  document.querySelector("#mithai-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="mithai-modal">
+          <img src="/assets/img_20171206_085006-500x250-72480008b50cb47ac9f4b6568d24361b.jpg">
+          <br>
+          <div class="product-modal-content">
+            <strong>
+              <p>Mithai - 0</p>
+            </strong>
+            <form id="-form"><br>
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Mithai">
+              <input type="hidden" name="price" value="0">
+            </form>
+            <center>
+              <button id="mithai-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#mithai-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="tandoori-chicken-nuggets-card" class="product-card">
+            <span class="price">$0</span>
+            <img src="/assets/pxl_20201011_155114235-200x200-294636948bdb053a094dfb5f6522a444.jpg">
+            <p class="title">Tandoori chicken nuggets</p>
+            <p class="desc">18-20 pieces served with tangy raita. (gluten-free, contains dairy)</p><script>
+  document.querySelector("#tandoori-chicken-nuggets-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="tandoori-chicken-nuggets-modal">
+          <img src="/assets/pxl_20201011_155114235-500x250-0a6a13cb1837f3bd94f5e8096e8c8975.jpg">
+          <br>
+          <div class="product-modal-content">
+            <strong>
+              <p>Tandoori chicken nuggets - 0</p>
+            </strong>
+            <form id="-form"><br>
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Tandoori chicken nuggets">
+              <input type="hidden" name="price" value="0">
+            </form>
+            <center>
+              <button id="tandoori-chicken-nuggets-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#tandoori-chicken-nuggets-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="tandoori-paneer-nuggets-card" class="product-card">
+            <span class="price">$0</span>
+            <img src="/assets/pxl_20201011_153842642-200x200-24273c606d542077d3b7d64464af63ca.jpg">
+            <p class="title">Tandoori paneer nuggets</p>
+            <p class="desc">18-20 pieces served with tangy raita. (gluten-free, contains dairy)</p><script>
+  document.querySelector("#tandoori-paneer-nuggets-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="tandoori-paneer-nuggets-modal">
+          <img src="/assets/pxl_20201011_153842642-500x250-a12674ac7ff9f32f9028bc038946d5f4.jpg">
+          <br>
+          <div class="product-modal-content">
+            <strong>
+              <p>Tandoori paneer nuggets - 0</p>
+            </strong>
+            <form id="-form"><br>
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Tandoori paneer nuggets">
+              <input type="hidden" name="price" value="0">
+            </form>
+            <center>
+              <button id="tandoori-paneer-nuggets-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#tandoori-paneer-nuggets-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="chicken-and-veg-samosas-card" class="product-card">
+            <span class="price">$0</span>
+            <img src="/assets/pxl_20200912_154916751-200x200-6721fe97b18c7652ae5938e029ca487c.jpg">
+            <p class="title">Chicken and veg samosas</p>
+            <p class="desc">12 samosas served with sweet tamarind chutney.</p><script>
+  document.querySelector("#chicken-and-veg-samosas-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="chicken-and-veg-samosas-modal">
+          <img src="/assets/pxl_20200912_154916751-500x250-dfe005b38a8f5be5b29ddc5c20b92a0f.jpg">
+          <br>
+          <div class="product-modal-content">
+            <strong>
+              <p>Chicken and veg samosas - 0</p>
+            </strong>
+            <form id="-form"><br>
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Chicken and veg samosas">
+              <input type="hidden" name="price" value="0">
+            </form>
+            <center>
+              <button id="chicken-and-veg-samosas-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#chicken-and-veg-samosas-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
         </div></div><div class="row">
     <div class="col-xs-12 col-md-6">
 
