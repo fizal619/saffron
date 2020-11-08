@@ -1,5 +1,5 @@
 ---
-title: Mixed veg samosas
+title: Mixed Veggie Samosas
 price: $2000
 image: /images/upload/mixed-veg-samosas.png
 options:
