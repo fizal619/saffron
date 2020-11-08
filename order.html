@@ -417,6 +417,106 @@
     });
 </script>
 </div>
+        </div></div><h2>Sweet Treats</h2>
+    <br>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div id="gulab-jamun-card" class="product-card">
+            <span class="price">$0</span>
+            <img src="/assets/pxl_20200923_133821106.portrait-200x200-eb93a7b0295123653eb77a799ae19e7e.jpg">
+            <p class="title">Gulab jamun</p>
+            <p class="desc">12 pieces (gluten-free, contains dairy)</p><script>
+  document.querySelector("#gulab-jamun-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="gulab-jamun-modal">
+          <img src="/assets/pxl_20200923_133821106.portrait-500x250-0462d8af3b7e58e34e591f8f6183094b.jpg">
+          <br>
+          <div class="product-modal-content">
+            <strong>
+              <p>Gulab jamun - 0</p>
+            </strong>
+            <form id="-form"><br>
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Gulab jamun">
+              <input type="hidden" name="price" value="0">
+            </form>
+            <center>
+              <button id="gulab-jamun-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#gulab-jamun-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="rasmalai-card" class="product-card">
+            <span class="price">$0</span>
+            <img src="/assets/1472408475848-200x200-3a16c68d93a11cee026db974729c3378.jpg">
+            <p class="title">Rasmalai</p>
+            <p class="desc">24 pieces (gluten-free, contains milks & nuts)</p><script>
+  document.querySelector("#rasmalai-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="rasmalai-modal">
+          <img src="/assets/1472408475848-500x250-bfa57145cdfd0d8286878b3a4a627ab4.jpg">
+          <br>
+          <div class="product-modal-content">
+            <strong>
+              <p>Rasmalai - 0</p>
+            </strong>
+            <form id="-form"><br>
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Rasmalai">
+              <input type="hidden" name="price" value="0">
+            </form>
+            <center>
+              <button id="rasmalai-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#rasmalai-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
         </div></div><div class="row">
     <div class="col-xs-12 col-md-6">
 
