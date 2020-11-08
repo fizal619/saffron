@@ -1,5 +1,5 @@
 ---
-name: Tandoori chicken nuggets
-image: /images/upload/pxl_20201011_155114235.jpg
+title: Tandoori paneer nuggets
+image: /images/upload/pxl_20201011_153842642.jpg
 description: 18-20 pieces served with tangy raita. (gluten-free, contains dairy)
 ---

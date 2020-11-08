@@ -25,14 +25,23 @@
                   Add to Bag
                 </button>
               </center>
+              <input type="hidden" name="name" value="{{ product.title }}">
+              <input type="hidden" name="price" value="{{ product.price }}">
             </form>
-            <br>
+            <center>
+              <button id="{{ product.slug }}-close" class="btn btn-outline-primary close">
+                Close
+              </button>
+            </center>
           </div>
         </div>
       `);
       instance.show();
       instance.element()
         .querySelector("form")
-        .addEventListener("submit", addToBagHandler)
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#{{ product.slug }}-close")
+        .addEventListener("click", instance.close);
     });
 </script>

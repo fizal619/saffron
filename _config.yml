@@ -38,6 +38,8 @@ plugins:
 assets:
   sources:
     - images/upload
+    - css
+    - js
 
 collections:
   products:
