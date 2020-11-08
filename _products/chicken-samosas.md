@@ -1,6 +1,6 @@
 ---
 title: Chicken Samosas
-price: $2,500
+price: 2,500
 image: /images/upload/chicken-samosa.png
 options:
   - Mild
