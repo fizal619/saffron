@@ -1,6 +1,7 @@
 ---
-title: Besan ladoo
-image: /images/upload/img_20171206_083258.jpg
+title: Besan Ladoo
+price: $7,200
+image: /images/upload/besan-ladoo.png
+options: []
 description: 24 pieces (gluten & dairy free)
-price: 0
 ---
