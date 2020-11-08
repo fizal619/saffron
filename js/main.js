@@ -3,16 +3,19 @@ const bagContainer = document.querySelector(".bag");
 const bagIcon = document.querySelector("#bag-icon");
 const bagClose = document.querySelector("#bag-close");
 const bagItems = document.querySelector("#bag-items");
+const ordersContainer = document.querySelector(".order-container");
 const bag = {}
 
 
 if (bagContainer) {
   bagIcon.addEventListener("click", function(){
     bagContainer.style.display = "block";
+    ordersContainer.classList.add("bag-open");
   });
 
   bagClose.addEventListener("click", function(){
     bagContainer.style.display = "none";
+    ordersContainer.classList.remove("bag-open");
   });
 
 }
