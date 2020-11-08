@@ -1,6 +1,6 @@
 ---
 title: Chicken & Veg Samosas
-price: $3,000
+price: 3,000
 image: /images/upload/chicken-veg-samosas.png
 options:
   - Mild
