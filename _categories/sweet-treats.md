@@ -1,7 +1,7 @@
 ---
 title: Sweet Treats
 products:
-  - Gulab jamun
   - Rasmalai
-  - Besan ladoo
+  - Besan Ladoo
+  - Gulab Jamun
 ---
