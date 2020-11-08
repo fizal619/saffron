@@ -1,6 +1,6 @@
 ---
 title: Burfi
-image: /images/upload/img_20170308_190927.jpg
+price: $3,000
+image: /images/upload/burfi.png
 description: 12 pieces (gluten-free, contains dairy)
-price: 0
 ---
