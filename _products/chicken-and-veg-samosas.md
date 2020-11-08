@@ -1,7 +1,7 @@
 ---
-title: Chicken and veg samosas
-price: $3000
-image: /images/upload/pxl_20200912_154916751.jpg
+title: Chicken & Veg Samosas
+price: $3,000
+image: /images/upload/chicken-veg-samosas.png
 options:
   - Mild
   - Spicy
