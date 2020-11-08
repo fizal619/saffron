@@ -7,7 +7,7 @@
           <br>
           <div class="product-modal-content">
             <strong>
-              <p>{{ product.title }}</p>
+              <p>{{ product.title }} - {{ product.price }}</p>
             </strong>
             <form id="{{product-slug}}-form">
               {%- for item in product.options -%}
@@ -29,7 +29,7 @@
               <input type="hidden" name="price" value="{{ product.price }}">
             </form>
             <center>
-              <button id="{{ product.slug }}-close" class="btn btn-outline-primary close">
+              <button id="{{ product.slug }}-close" class="btn btn-outline-primary closeBtn">
                 Close
               </button>
             </center>

@@ -5,13 +5,17 @@ const bagClose = document.querySelector("#bag-close");
 const bagItems = document.querySelector("#bag-items");
 const bag = {}
 
-bagIcon.addEventListener("click", function(){
-  bagContainer.style.display = "block";
-});
 
-bagClose.addEventListener("click", function(){
-  bagContainer.style.display = "none";
-});
+if (bagContainer) {
+  bagIcon.addEventListener("click", function(){
+    bagContainer.style.display = "block";
+  });
+
+  bagClose.addEventListener("click", function(){
+    bagContainer.style.display = "none";
+  });
+
+}
 
 if (homeContainer) {
   homeContainer.style.backgroundImage = "url('/images/cover1.jpg')";
@@ -31,7 +35,7 @@ function addToBagHandler(e) {
   e.preventDefault();
   const itemObj = {
     name: e.target.name.value,
-    option: e.target.option.value,
+    option: e.target.option ? e.target.option.value : "",
     qty: e.target.qty.value,
     price: e.target.price.value,
     instructions: e.target.instructions.value
@@ -42,7 +46,7 @@ function addToBagHandler(e) {
     text: "Item added to bag",
     duration: 3000
   }).showToast();
-  e.target.parentElement.querySelector(".close").click();
+  e.target.parentElement.querySelector(".closeBtn").click();
   e.target.reset();
   renderBag();
 }

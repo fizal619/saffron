@@ -1,5 +1,5 @@
 ---
-name: Snackables
+title: Snackables
 products:
   - Chicken Samosas
   - Veggie Samosas

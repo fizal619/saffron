@@ -60,7 +60,7 @@ permalink: /order
   <br>
 
   {%- for category in site.categories -%}
-    <h2>{{ category.name }}</h2>
+    <h2>{{ category.title }}</h2>
     <br>
     <div class="row">
       {%- for item in category.products -%}
@@ -69,7 +69,7 @@ permalink: /order
         <div class="col-xs-12 col-md-6">
           <div id="{{ product.slug }}-card" class="product-card">
             <span class="price">${{product.price}}</span>
-            {{ productFilename | append:' [resize:200x200]' | image }}
+            {{ productFilename | append:' [resize:400x200]' | image }}
             <p class="title">{{product.title}}</p>
             <p class="desc">{{product.description}}</p>
             {%- include product_modal.html -%}

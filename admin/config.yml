@@ -33,7 +33,7 @@ collections:
     create: true
     fields:
       - label: Display Name
-        name: name
+        name: title
         required: true
       - label: Products
         name: products
