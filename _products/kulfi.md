@@ -8,6 +8,6 @@ options:
   - Rose
   - Masala Chai
   - Rum
-description: Homemade Indian ice-cream served frozen. Serves approximately 5
-  persons. (Gluten-free, contains dairy, nuts are optional)
+description: Homemade Indian ice-cream, serves approximately 5 persons.
+  (Gluten-free, contains dairy, nuts are optional)
 ---
