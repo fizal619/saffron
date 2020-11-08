@@ -1,7 +1,7 @@
 ---
 title: Tandoori Paneer Nuggets
 price: $5000
-image: /images/upload/pxl_20201011_153842642.jpg
+image: /images/upload/tandoori-paneer-nuggets.png
 options:
   - Mild
   - Spicy
