@@ -1,8 +1,11 @@
 ---
 title: Chicken Samosas
+price: $2,500
 image: /images/upload/pxl_20200912_154916751.jpg
-price: 2,500
 options:
+  - Mild
+  - Spicy
+  - Extra Spicy
   - Deep-fried
   - Air-fried
   - Frozen
