@@ -1,7 +1,7 @@
 ---
 title: Chicken Samosas
 price: $2,500
-image: /images/upload/pxl_20200912_154916751.jpg
+image: /images/upload/chicken-samosa.png
 options:
   - Mild
   - Spicy
