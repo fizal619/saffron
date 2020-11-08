@@ -67,9 +67,9 @@ permalink: /order
         {%- assign product = site.products | where: "title", item | first  -%}
         {% assign productFilename = product.image | split:"/" | last  %}
         <div class="col-xs-12 col-md-6">
-          <div id="{{ product.slug }}-card" class="product-card">
+          <div id="{{ category.slug }}-{{ product.slug }}-card" class="product-card">
             <span class="price">${{product.price}}</span>
-            {{ productFilename | append:' [resize:200x200]' | image }}
+            {% asset '{{ productFilename }}' magick:resize='200' %}
             <p class="title">{{product.title}}</p>
             <p class="desc">{{product.description}}</p>
             {%- include product_modal.html -%}
@@ -77,7 +77,9 @@ permalink: /order
         </div>
       {%- endfor -%}
     </div>
+    <br>
   {%- endfor -%}
+
   <div class="row">
     <div class="col-xs-12 col-md-6">
 

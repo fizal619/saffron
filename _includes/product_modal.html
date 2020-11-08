@@ -1,9 +1,9 @@
 <script>
-  document.querySelector("#{{ product.slug }}-card")
+  document.querySelector("#{{ category.slug }}-{{ product.slug }}-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="{{ product.slug }}-modal">
-          {{ productFilename | append:' [resize:500x250]' | image }}
+          {% asset '{{productFilename}}' magick:resize='400' magick:crop='400x300+0+0' magick:gravity=center %}
           <br>
           <div class="product-modal-content">
             <strong>
