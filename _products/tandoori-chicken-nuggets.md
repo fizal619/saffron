@@ -1,7 +1,7 @@
 ---
 title: Tandoori Chicken Nuggets
 price: $5000
-image: /images/upload/pxl_20201011_155114235.jpg
+image: /images/upload/tandoori-chicken-nuggets.png
 options:
   - Mild
   - Spicy
