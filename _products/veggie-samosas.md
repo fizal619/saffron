@@ -1,7 +1,7 @@
 ---
 title: Veggie Samosas
 price: "$1500 "
-image: /images/upload/pxl_20200912_153529163.jpg
+image: /images/upload/veggie-samosas.png
 options:
   - Mild
   - Spicy
