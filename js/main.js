@@ -1,11 +1,16 @@
 const homeContainer = document.querySelector(".home-container");
 const bagContainer = document.querySelector(".bag");
 const bagIcon = document.querySelector("#bag-icon");
+const total = document.querySelector("#total");
+const totalContainer = document.querySelector("#total-container");
 const bagClose = document.querySelector("#bag-close");
-const bagItems = document.querySelector("#bag-items");
+const bagItems = document.querySelector(".rendered-bag-items");
 const ordersContainer = document.querySelector(".order-container");
 const bag = {}
 
+function commas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 if (bagContainer) {
   bagIcon.addEventListener("click", function(){
@@ -17,6 +22,13 @@ if (bagContainer) {
     bagContainer.style.display = "none";
     ordersContainer.classList.remove("bag-open");
   });
+
+  bagContainer.addEventListener("click", function(e){
+    if (e.target.classList.contains("bag")) {
+      bagContainer.style.display = "none";
+      ordersContainer.classList.remove("bag-open");
+    }
+  })
 
 }
 
@@ -39,8 +51,8 @@ function addToBagHandler(e) {
   const itemObj = {
     name: e.target.name.value,
     option: e.target.option ? e.target.option.value : "",
-    qty: e.target.qty.value,
-    price: e.target.price.value,
+    qty: parseInt(e.target.qty.value),
+    price: parseInt(e.target.price.value.replace(",","")),
     instructions: e.target.instructions.value
   };
   console.log(itemObj);
@@ -48,7 +60,7 @@ function addToBagHandler(e) {
   Toastify({
     text: "Item added to bag",
     duration: 2000,
-    stopOnFocus: true,
+    stopOnFocus: false,
     backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
   }).showToast();
   e.target.parentElement.querySelector(".closeBtn").click();
@@ -66,23 +78,46 @@ function addToBagHandler(e) {
   renderBag();
 }
 
+function removeFromBag(e) {
+  delete bag[e.target.dataset.id];
+  renderBag();
+}
+
 function renderBag() {
   const bagKeys = Object.keys(bag);
-  if (bagKeys.length === 0) {
-    return;
-  }
-
+  let runningTotal = 0;
   bagItems.innerHTML = "";
-
+  if (bagKeys.length === 0) {
+    total.textContent = `$${commas(runningTotal)}`;
+    totalContainer.style.display = "none";
+    return;
+  } else {
+    totalContainer.style.display = "block";
+  }
   for (key in bag) {
     console.log(key)
     const item = bag[key];
     const el = document.createElement("div");
+    el.classList.add("bag-item");
     el.innerHTML = `
-      <p>${item.qty} ${item.name} ${item.option}</p>
-      <p>${parseInt(item.price.replace(",","")) * parseInt(item.qty)}</p>
+      <p class="bag-item-price">
+        $${commas(item.qty * item.price)}
+      </p>
+      <p> <strong>${item.qty}</strong> x ${item.name}${item.option ? ", " + item.option : ""}  </p>
+      <button
+        class="btn btn-outline-primary btn-sm delete" data-id="${key}"
+      >
+        Delete
+      </button>
+      <p class="bag-item-instruction">
+        <em>${item.instructions} &nbsp</em>
+      </p>
     `;
+    runningTotal += item.qty * item.price;
     bagItems.appendChild(el);
+    bagItems.querySelector(".delete")
+      .addEventListener("click", removeFromBag);
+    bagItems.appendChild(document.createElement("br"));
   }
-
+  total.textContent = `$${commas(runningTotal)}`;
 }

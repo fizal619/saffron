@@ -23,15 +23,17 @@ permalink: /contact
     </div>
     <div class="col-md-6 col-xs-12">
       <h3>Leave Us a Message</h3>
-      <form action="/">
+      <form id="contact-form" action="/">
         <label for="name">Name:</label> <br>
-        <input type="text" class="name"> <br>
+        <input required type="text"name="name" class="name"> <br>
         <label for="email">Email:</label> <br>
-        <input type="text" class="email"> <br>
+        <input required type="email" name="email" class="email"> <br>
         <label for="message">Message:</label> <br>
-        <textarea name="message" rows="5"></textarea> <br>
+        <textarea required name="message" rows="5"></textarea> <br>
         <button class="btn btn-outline-primary">Submit</button>
       </form>
     </div>
   </div>
 </div>
+
+{% asset contact.js %}

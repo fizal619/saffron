@@ -1,6 +1,6 @@
 ---
 title: Veggie Samosas
-price: "1,500 "
+price: 1,500
 image: /images/upload/veggie-samosas.png
 options:
   - Mild

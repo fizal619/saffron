@@ -4,10 +4,11 @@
       const instance = basicLightbox.create(`
         <div id="{{ product.slug }}-modal" class="product-modal-container">
           {% asset '{{productFilename}}' magick:resize='400' magick:crop='400x300+0+0' magick:gravity='center' %}
+          <span class="modal-desc"> {{ product.description }} </span>
           <br>
           <div class="product-modal-content">
             <strong>
-              <p>{{ product.title }} - {{ product.price }}</p>
+              <p>{{ product.title }} - ${{ product.price }}</p>
             </strong>
             <form id="{{product-slug}}-form">
               {%- for item in product.options -%}
