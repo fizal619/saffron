@@ -45,18 +45,16 @@ nav a:hover {
 
 
 .home {
-  max-width: 300px;
+  width: 400px;
   position: absolute;
   left: 50%;
-  top: 50vh;
+  top: 47.5vh;
   transform: translate(-50%, -15vh);
   text-align: center;
 }
 
 .home img {
-  max-width: 100%;
-  height: 200px;
-  border-radius: 50%;
+  width: 100%;
 }
 
 .home-container {
@@ -70,7 +68,7 @@ nav a:hover {
 }
 
 .filter {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.6);
   width: 100%;
   height: 100vh;
   display: inline-block;
@@ -267,12 +265,13 @@ button.btn-outline-primary:hover {
 }
 
 .bag-content {
-  background-color: whitesmoke;
+  background-color: white;
   width: 500px;
   max-width: 80%;
   position: absolute;
   right: 0;
   height: 100vh;
+  overflow-y: auto;
 }
 
 .order-container.bag-open {
@@ -281,4 +280,54 @@ button.btn-outline-primary:hover {
 
 .label {
   cursor: pointer;
+}
+
+.modal-desc {
+  background: rgba(245,245,245,0.8);
+  font-weight: lighter;
+  padding: 5px 10px;
+  transform: translateX(-25px);
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  left: 25px;
+}
+
+.bag-items {
+  padding: 0px 10px;
+}
+
+.bag-item {
+  background-color: whitesmoke;
+  margin: 0 5%;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.bag-item .delete {
+  float: right;
+}
+
+.bag-item p {
+  margin-bottom: 2px;
+}
+
+.bag-item-price {
+  float: right;
+}
+
+.btn-outline-primary:active {
+  background-color: #0a0a0a !important;
+  border-color: #0a0a0a !important;
+  color: white;
+}
+
+#total-container {
+  display: none;
+}
+
+.bag-item-instruction {
+  font-weight: lighter;
+  font-size: 1em;
 }
