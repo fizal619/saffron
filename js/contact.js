@@ -1,18 +1,25 @@
 const contactForm = document.getElementById("contact-form");
-
+let sending = false;
 contactForm.addEventListener("submit", function(e){
   e.preventDefault();
+  if (sending) return;
   const body = {
-    value1: e.target.name.value,
-    value2: e.target.email.value,
-    value3: e.target.message.value
+    customer: e.target.name.value,
+    email: e.target.email.value,
+    body: e.target.message.value,
+    type: "contact"
   }
-
-  fetch("", {
+  sending = true;
+  fetch("https://6hk1ho7jw9.execute-api.us-east-1.amazonaws.com/prod/contact", {
     method: "POST",
-    body: body
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
   })
-    .then(function() {
+    .then(function(r) { return r.json() })
+    .then(function(data) {
+      console.log(data);
       Toastify({
         text: "Message Sent. We'll Be in touch! 📧",
         duration: 2000,
@@ -20,6 +27,7 @@ contactForm.addEventListener("submit", function(e){
         backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
       }).showToast();
       e.target.reset();
+      sending = false;
     })
     .catch(function() {
       Toastify({
@@ -28,6 +36,6 @@ contactForm.addEventListener("submit", function(e){
         stopOnFocus: false,
         backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
       }).showToast();
+      sending = false;
     });
-
 });
