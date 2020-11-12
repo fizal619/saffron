@@ -6,10 +6,19 @@ const totalContainer = document.querySelector("#total-container");
 const bagClose = document.querySelector("#bag-close");
 const bagItems = document.querySelector(".rendered-bag-items");
 const ordersContainer = document.querySelector(".order-container");
+const orderForm = document.querySelector("#order-form");
+const orderDate = document.querySelector("#date-input");
+
 const bag = {}
+let runningTotalTop = 0;
+let sending = false;
 
 function commas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+if (orderForm) {
+  orderForm.addEventListener("submit", checkout);
 }
 
 if (bagContainer) {
@@ -28,9 +37,17 @@ if (bagContainer) {
       bagContainer.style.display = "none";
       ordersContainer.classList.remove("bag-open");
     }
-  })
+  });
 
 }
+
+function orderDateRefresh() {
+  if (orderDate) {
+    orderDate.min = new Date(Date.now() + 43200000).toISOString().split("T")[0];
+    orderDate.value = new Date(Date.now() + 43200000).toISOString().split("T")[0];
+  }
+}
+orderDateRefresh();
 
 if (homeContainer) {
   homeContainer.style.backgroundImage = "url('/images/cover1.jpg')";
@@ -115,9 +132,57 @@ function renderBag() {
     `;
     runningTotal += item.qty * item.price;
     bagItems.appendChild(el);
-    bagItems.querySelector(".delete")
+    el.querySelector(".delete")
       .addEventListener("click", removeFromBag);
     bagItems.appendChild(document.createElement("br"));
   }
   total.textContent = `$${commas(runningTotal)}`;
+  runningTotalTop = runningTotal;
+}
+
+function checkout(e) {
+  e.preventDefault();
+  if (sending) {
+    return;
+  }
+  let body = {
+    customer: e.target.name.value,
+    email: e.target.email.value,
+    phone: e.target.phone.value,
+    date: e.target.date.value,
+    address: e.target.address.value,
+    bag: bag,
+    type: "order"
+  }
+  sending = true;
+  fetch("https://6hk1ho7jw9.execute-api.us-east-1.amazonaws.com/prod/contact", {
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  })
+    .then(function(r) { return r.json() })
+    .then(function(data) {
+      console.log(data);
+      Toastify({
+        text: "Order Sent. We'll Be in touch! 📧",
+        duration: 2000,
+        stopOnFocus: false,
+        backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
+      }).showToast();
+      e.target.reset();
+      sending = false;
+      orderDateRefresh();
+    })
+    .catch(function() {
+      Toastify({
+        text: "Order Not Sent. Something went wrong.",
+        duration: 2000,
+        stopOnFocus: false,
+        backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
+      }).showToast();
+      sending = false;
+    });
+
 }

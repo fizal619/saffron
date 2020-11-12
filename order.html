@@ -18,6 +18,29 @@ permalink: /order
         </p>
         <p>
           <strong>Total</strong>
+          <br>
+        </p>
+        <p>
+          <form id="order-form">
+            <input placeholder="Name" required type="text" name="name" id="order-name" />
+            <br>
+            <input placeholder="Email" required type="email" name="email" id="order-email" />
+            <br>
+            <input placeholder="Phone Number" required type="text" name="phone" id="order-phone" />
+            <br>
+            <textarea placeholder="Address" required name="address" id="order-address"></textarea>
+            <p>Pickup/Delivery Date:</p>
+            <input
+              required
+              type="date" id="date-input"
+              name="date"
+            />
+            <br>
+            <center>
+              <button class="btn btn-outline-primary btn-sm">Checkout</button>
+              <p class="checkout-desc">After clicking checkout we'll be in touch soon to confirm your order.</p>
+            </center>
+          </form>
         </p>
       </div>
     </div>
@@ -64,7 +87,7 @@ permalink: /order
     <div class="card-custom">
       <br>
       <img src="/images/truck.png" alt="truck"/>
-      <p>Delivery</p>
+      <p>Receive</p>
     </div>
   </div>
 
