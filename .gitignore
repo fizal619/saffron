@@ -5,4 +5,4 @@ _site
 .jekyll-assets-cache/
 vendor
 _functions/src/node_modules
-_function/index.zip
+_functions/index.zip
