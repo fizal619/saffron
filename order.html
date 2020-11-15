@@ -105,273 +105,20 @@
     </div>
   </div>
 
-  <br><h2>Diwali Specials</h2>
-    <br>
-    <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <div id="diwali-specials-burfi-card" class="product-card">
-            <span class="price">$3000</span>
-            <img src="/assets/19964e-4f5a4e8c7c4b532d91ec1c07a26ab8d872cb55e464f712514f7487ca6fa4369f.png">
-            <p class="title">Burfi</p>
-            <p class="desc">12 pieces (gluten-free, contains dairy)</p><script>
-  document.querySelector("#diwali-specials-burfi-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="burfi-modal" class="product-modal-container">
-          <img src="/assets/6511ed-f50e3a7ee325b73c728078efab8a23b6f02f0ff67251c3b0a204cdceaef50bf2.png">
-          <span class="modal-desc"> 12 pieces (gluten-free, contains dairy) </span>
-          <br>
-          <div class="product-modal-content">
-            <strong>
-              <p>Burfi - $3000</p>
-            </strong>
-            <form id="-form">
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Burfi">
-              <input type="hidden" name="price" value="3000">
-            </form>
-            <center>
-              <button id="burfi-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#burfi-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div id="diwali-specials-mithai-card" class="product-card">
-            <span class="price">$1000</span>
-            <img src="/assets/3b9845-2bdd471175e53bf161746e8647031af3a40d486d89f114c3a36f73137075ce4e.png">
-            <p class="title">Mithai</p>
-            <p class="desc">12 pieces (contains wheat and dairy)</p><script>
-  document.querySelector("#diwali-specials-mithai-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="mithai-modal" class="product-modal-container">
-          <img src="/assets/1ef7a1-c91f31fed6a315802ea04939d5802c668fbf0618eda61f3105ea3c318430390f.png">
-          <span class="modal-desc"> 12 pieces (contains wheat and dairy) </span>
-          <br>
-          <div class="product-modal-content">
-            <strong>
-              <p>Mithai - $1000</p>
-            </strong>
-            <form id="-form">
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Mithai">
-              <input type="hidden" name="price" value="1000">
-            </form>
-            <center>
-              <button id="mithai-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#mithai-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div id="diwali-specials-rasmalai-card" class="product-card">
-            <span class="price">$10000</span>
-            <img src="/assets/0ce1af-d6bc98cbfbb9fa080c6a20ff609d5b0d186711ecb71d06f3ea5b1fa1f31deefe.png">
-            <p class="title">Rasmalai</p>
-            <p class="desc">24 pieces (gluten-free, contains milks & nuts)</p><script>
-  document.querySelector("#diwali-specials-rasmalai-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="rasmalai-modal" class="product-modal-container">
-          <img src="/assets/374044-11b7b7939ed376c2c783f64eed7804f7b16b1903b673bcfef2b996fd603ba268.png">
-          <span class="modal-desc"> 24 pieces (gluten-free, contains milks & nuts) </span>
-          <br>
-          <div class="product-modal-content">
-            <strong>
-              <p>Rasmalai - $10000</p>
-            </strong>
-            <form id="-form">
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Rasmalai">
-              <input type="hidden" name="price" value="10000">
-            </form>
-            <center>
-              <button id="rasmalai-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#rasmalai-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div id="diwali-specials-beshan-ladoo-card" class="product-card">
-            <span class="price">$7200</span>
-            <img src="/assets/832705-43d47a11eb4b4b6dacac1187fd541ed5c6bd782ffc6f90ffd48805f3a27a61c0.png">
-            <p class="title">Besan Ladoo</p>
-            <p class="desc">24 pieces (gluten & dairy free)</p><script>
-  document.querySelector("#diwali-specials-beshan-ladoo-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="beshan-ladoo-modal" class="product-modal-container">
-          <img src="/assets/16f831-264c49dcc01b58645d465e2212cc66f737ec034d1dcc0bb3bee4dedc188e4c8d.png">
-          <span class="modal-desc"> 24 pieces (gluten & dairy free) </span>
-          <br>
-          <div class="product-modal-content">
-            <strong>
-              <p>Besan Ladoo - $7200</p>
-            </strong>
-            <form id="-form">
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Besan Ladoo">
-              <input type="hidden" name="price" value="7200">
-            </form>
-            <center>
-              <button id="beshan-ladoo-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#beshan-ladoo-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div id="diwali-specials-gulab-jamun-card" class="product-card">
-            <span class="price">$1200</span>
-            <img src="/assets/943075-efe4b1c3e38801322b4b3282d597fbd86967e5a63c684f55a70bc5ad45e01a7b.png">
-            <p class="title">Gulab Jamun</p>
-            <p class="desc">12 pieces (gluten-free, contains dairy)</p><script>
-  document.querySelector("#diwali-specials-gulab-jamun-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="gulab-jamun-modal" class="product-modal-container">
-          <img src="/assets/5bc017-65de91f874e8fd0335f4e5d62aeaf87d9e4c0465e4268f65665a70b80a061f18.png">
-          <span class="modal-desc"> 12 pieces (gluten-free, contains dairy) </span>
-          <br>
-          <div class="product-modal-content">
-            <strong>
-              <p>Gulab Jamun - $1200</p>
-            </strong>
-            <form id="-form">
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Gulab Jamun">
-              <input type="hidden" name="price" value="1200">
-            </form>
-            <center>
-              <button id="gulab-jamun-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#gulab-jamun-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div></div>
-    <br><h2>Snackables</h2>
+  <br><h2>Snackables</h2>
     <br>
     <div class="row">
         <div class="col-xs-12 col-md-6">
           <div id="snackables-chicken-samosas-card" class="product-card">
             <span class="price">$2500</span>
-            <img src="/assets/040177-ef9af1b8285716fa9b49a587e4247d84fac2db1e926cf5450aa0e93113ac8c3e.png">
+            <img src="/assets/040177-412de0b29bda3a2aa7ddcbda8eb4290715ab404e4b9404e52ecd42326f7a5330.png">
             <p class="title">Chicken Samosas</p>
             <p class="desc">12 samosas served with sweet tamarind chutney</p><script>
   document.querySelector("#snackables-chicken-samosas-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="chicken-samosas-modal" class="product-modal-container">
-          <img src="/assets/9cc49a-19011ae991d85fb2dd809330ac5987ab48a805fe39063e75e499b975ddd205cd.png">
+          <img src="/assets/9cc49a-5c22da12f7f0cce23852d633da72c1b4f7b8acf2c17c3ae9038f591c62ba556d.png">
           <span class="modal-desc"> 12 samosas served with sweet tamarind chutney </span>
           <br>
           <div class="product-modal-content">
@@ -422,14 +169,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-veggie-samosas-card" class="product-card">
             <span class="price">$1500</span>
-            <img src="/assets/f25eee-d3cdaa424e97c16416b6922e093531ccd9320f7828500e0756f6d4d49a1e9f2d.png">
+            <img src="/assets/f25eee-cfe8d6d1c58550f86db7e073e588943cd61a3dca02608347f5977c65bab1d4cf.png">
             <p class="title">Veggie Samosas</p>
             <p class="desc">12 samosas served with sweet tamarind chutney</p><script>
   document.querySelector("#snackables-veggie-samosas-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="veggie-samosas-modal" class="product-modal-container">
-          <img src="/assets/d1285a-d2789c254f60e85857a8fbfa180f2eaec039bfeda3f292f0cb3f8ab6d3c4c133.png">
+          <img src="/assets/d1285a-9eca2f528e6cea92d9dcb879dea833ee022a4c825f199cd342ed6c3e9a719e61.png">
           <span class="modal-desc"> 12 samosas served with sweet tamarind chutney </span>
           <br>
           <div class="product-modal-content">
@@ -480,14 +227,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-chicken-and-veg-samosas-card" class="product-card">
             <span class="price">$3000</span>
-            <img src="/assets/9b3213-d1fa59f430cfb1c83dd01bf619135a81f397276c0584f910704a5eb34ba14fe6.png">
+            <img src="/assets/9b3213-bab3a47496f0763088454fe378ec86d37e1ad514ddb23124586173f1f5559282.png">
             <p class="title">Chicken & Veg Samosas</p>
             <p class="desc">12 samosas served with sweet tamarind chutney.</p><script>
   document.querySelector("#snackables-chicken-and-veg-samosas-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="chicken-and-veg-samosas-modal" class="product-modal-container">
-          <img src="/assets/b09875-46911209430d2e32f0a7309f3d170763fbe2f90fde2f4aa049fe2ce8806bb3d4.png">
+          <img src="/assets/b09875-ac197b3e8c8b210ea02d0c888a489b62681b345c143c2b45732b310eff8c158e.png">
           <span class="modal-desc"> 12 samosas served with sweet tamarind chutney. </span>
           <br>
           <div class="product-modal-content">
@@ -538,14 +285,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-mixed-veg-samosas-card" class="product-card">
             <span class="price">$2000</span>
-            <img src="/assets/1f5beb-9d058a13e7db2b07e5b1c2fdd7fdd28279b5a241d5978a76187d2192ebbf511b.png">
+            <img src="/assets/1f5beb-44406d25d8999558a22bec0f8950a169219d3aaa38eef8d4a25cdbcc0ebb9461.png">
             <p class="title">Mixed Veggie Samosas</p>
             <p class="desc">12 samosas served with sweet tamarind chutney.</p><script>
   document.querySelector("#snackables-mixed-veg-samosas-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="mixed-veg-samosas-modal" class="product-modal-container">
-          <img src="/assets/7767a4-88788f16642a24b7a5b4c7872c79fef1784ae2dbdde1d2b2f323502a68f5f89e.png">
+          <img src="/assets/7767a4-21f3da26f966cd51dbaf7d008797ff7d35eb434d391212d70b1eaa163f9cdee9.png">
           <span class="modal-desc"> 12 samosas served with sweet tamarind chutney. </span>
           <br>
           <div class="product-modal-content">
@@ -596,14 +343,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-tandoori-paneer-nuggets-card" class="product-card">
             <span class="price">$5000</span>
-            <img src="/assets/61d060-e0036f61fdf1ec36750782aa843bbe2d9a040a6bb1e78cecd3788c0321280e9e.png">
+            <img src="/assets/61d060-56838d281936e0582cbb12f00baa27b77a4023d4e08438f33cdc4a52ca7ed6ba.png">
             <p class="title">Tandoori Paneer Nuggets</p>
             <p class="desc">18-20 pieces served with tangy raita. (gluten-free, contains dairy)</p><script>
   document.querySelector("#snackables-tandoori-paneer-nuggets-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="tandoori-paneer-nuggets-modal" class="product-modal-container">
-          <img src="/assets/88f2ce-4fb9eb0b02f5a7cd05965d9658a5c87595772e9899d930523ede34ab971d2f57.png">
+          <img src="/assets/88f2ce-1e46f1bd4ef0a5a40d75b9262a4987bba816aec8d42f2390478c939bb05eb810.png">
           <span class="modal-desc"> 18-20 pieces served with tangy raita. (gluten-free, contains dairy) </span>
           <br>
           <div class="product-modal-content">
@@ -651,14 +398,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-tandoori-chicken-nuggets-card" class="product-card">
             <span class="price">$5000</span>
-            <img src="/assets/be8c6b-1e11aafdad03ec23a75b155c0f10656c3d667a6546ed54a398ff1620d6b6ebfb.png">
+            <img src="/assets/be8c6b-a679f16a718b5d90bfadac5e025937024b84ead56397a75ab8f12e27e5348557.png">
             <p class="title">Tandoori Chicken Nuggets</p>
             <p class="desc">18-20 pieces served with tangy raita. (gluten-free, contains dairy)</p><script>
   document.querySelector("#snackables-tandoori-chicken-nuggets-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="tandoori-chicken-nuggets-modal" class="product-modal-container">
-          <img src="/assets/c57352-160b186700601014315dcc480116309bffc55acce8506af3277d0a0c0f61d019.png">
+          <img src="/assets/c57352-1eff8006564686994b8e71d0ad1ae61faf8d2577fd108938bdd259eeac49f4f6.png">
           <span class="modal-desc"> 18-20 pieces served with tangy raita. (gluten-free, contains dairy) </span>
           <br>
           <div class="product-modal-content">
@@ -709,14 +456,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-rasmalai-card" class="product-card">
             <span class="price">$10000</span>
-            <img src="/assets/0ce1af-d6bc98cbfbb9fa080c6a20ff609d5b0d186711ecb71d06f3ea5b1fa1f31deefe.png">
+            <img src="/assets/0ce1af-ddb3712add4fa075c9066111f0d9c92d1901b12d4a559b17a393f1bdd1f456b9.png">
             <p class="title">Rasmalai</p>
             <p class="desc">24 pieces (gluten-free, contains milks & nuts)</p><script>
   document.querySelector("#sweet-treats-rasmalai-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="rasmalai-modal" class="product-modal-container">
-          <img src="/assets/374044-11b7b7939ed376c2c783f64eed7804f7b16b1903b673bcfef2b996fd603ba268.png">
+          <img src="/assets/374044-f31dff06e2673e7d6b0ab992267e2aecd5731fb56d63afbd68bd43bb2cfbb7c0.png">
           <span class="modal-desc"> 24 pieces (gluten-free, contains milks & nuts) </span>
           <br>
           <div class="product-modal-content">
@@ -759,14 +506,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-gulab-jamun-card" class="product-card">
             <span class="price">$1200</span>
-            <img src="/assets/943075-efe4b1c3e38801322b4b3282d597fbd86967e5a63c684f55a70bc5ad45e01a7b.png">
+            <img src="/assets/943075-06e25a2788e17f075eeb63505b885b327fca3dd8b2473da6ed40aba48c9b5015.png">
             <p class="title">Gulab Jamun</p>
             <p class="desc">12 pieces (gluten-free, contains dairy)</p><script>
   document.querySelector("#sweet-treats-gulab-jamun-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="gulab-jamun-modal" class="product-modal-container">
-          <img src="/assets/5bc017-65de91f874e8fd0335f4e5d62aeaf87d9e4c0465e4268f65665a70b80a061f18.png">
+          <img src="/assets/5bc017-f9ded18c803e5383d9957e07d426dc5a3b1b5fa94058347c80f29ec3d7ca9536.png">
           <span class="modal-desc"> 12 pieces (gluten-free, contains dairy) </span>
           <br>
           <div class="product-modal-content">
@@ -809,14 +556,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-kulfi-card" class="product-card">
             <span class="price">$5000</span>
-            <img src="/assets/7d53e8-68cc18b548ba00a7813e7f685e6cc7b876c75316214e58d8939004de6a3ea54d.png">
+            <img src="/assets/7d53e8-60ec7ff274d198a60e54a369660f00d6238e7a6a31cd47b5a1abc2dcbc406e1b.png">
             <p class="title">Kulfi</p>
             <p class="desc">Homemade Indian ice-cream, serves approximately 5 persons. (Gluten-free, contains dairy, nuts are optional)</p><script>
   document.querySelector("#sweet-treats-kulfi-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="kulfi-modal" class="product-modal-container">
-          <img src="/assets/d4400d-dbc7dfb04005a8af40629b838acf66f19a810118a4422cb226aca0383824052e.png">
+          <img src="/assets/d4400d-3a304012724862263e2e85091b5779e2cfc38c9927a816417fca9e06b9392681.png">
           <span class="modal-desc"> Homemade Indian ice-cream, serves approximately 5 persons. (Gluten-free, contains dairy, nuts are optional) </span>
           <br>
           <div class="product-modal-content">
@@ -866,14 +613,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-beshan-ladoo-card" class="product-card">
             <span class="price">$7200</span>
-            <img src="/assets/832705-43d47a11eb4b4b6dacac1187fd541ed5c6bd782ffc6f90ffd48805f3a27a61c0.png">
+            <img src="/assets/832705-1b5e18b2247e1b2e7e75f6848afb865b3a8031a5ecabf04779dc9305d7010998.png">
             <p class="title">Besan Ladoo</p>
             <p class="desc">24 pieces (gluten & dairy free)</p><script>
   document.querySelector("#sweet-treats-beshan-ladoo-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="beshan-ladoo-modal" class="product-modal-container">
-          <img src="/assets/16f831-264c49dcc01b58645d465e2212cc66f737ec034d1dcc0bb3bee4dedc188e4c8d.png">
+          <img src="/assets/16f831-007cdc341aac0df94c337d3c22ef96feb90f9615501824e4aab3e4620197fadd.png">
           <span class="modal-desc"> 24 pieces (gluten & dairy free) </span>
           <br>
           <div class="product-modal-content">
