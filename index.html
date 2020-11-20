@@ -7,6 +7,20 @@ title: home
   <span class="filter">
     <div class="home">
       <img src="/images/note-card.png" alt="logo" />
+
     </div>
   </span>
+  <div class="testimonial-container">
+    <div class="container">
+      <h4 class="text-left">Testimonials</h4>
+      <div class="my-slider">
+        {% for item in site.testimonials %}
+          <p class="text-left">{{ item.body }}
+            <br>
+            <span style="float: right;"> - {{ item.title }}</span>
+          </p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </main>

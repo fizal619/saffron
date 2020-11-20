@@ -48,14 +48,52 @@ nav a:hover {
   width: 400px;
   position: absolute;
   left: 50%;
-  top: 47.5vh;
+  top: 32.5vh;
   transform: translate(-50%, -15vh);
   text-align: center;
+}
+
+.testimonial-container  {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  bottom: 35px;
+  position: fixed;
+}
+
+.testimonial-container p {
+  background-color: whitesmoke;
+  padding: 5px 20px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 0;
+}
+
+.testimonial-container .tns-inner {
+  transform: translate(0, -5px);
+}
+
+.testimonial-container .my-slider {
+  background-color: whitesmoke;
+  min-height: 200px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-container h4 {
+  background-color: whitesmoke;
+  padding: 10px 20px 0px 20px;
+  border-radius: 5px;
+  margin: 0;
 }
 
 .home img {
   width: 100%;
 }
+
 
 .home-container {
   width: 100%;
@@ -64,11 +102,15 @@ nav a:hover {
   transition-duration: 2s;
   transition-timing-function: ease-in; */
   background-position: center;
-  background-size: cover;
+  background-size: auto 100%;
+  background: url('/images/saffron-bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .filter {
-  background: rgba(0,0,0,0.6);
+  /* background: rgba(0,0,0,0.6); */
   width: 100%;
   height: 100vh;
   display: inline-block;
