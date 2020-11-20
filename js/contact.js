@@ -1,15 +1,15 @@
 const contactForm = document.getElementById("contact-form");
-let sending = false;
+let contactSending = false;
 contactForm.addEventListener("submit", function(e){
   e.preventDefault();
-  if (sending) return;
+  if (contactSending) return;
   const body = {
     customer: e.target.name.value,
     email: e.target.email.value,
     body: e.target.message.value,
     type: "contact"
   }
-  sending = true;
+  contactSending = true;
   fetch("https://6hk1ho7jw9.execute-api.us-east-1.amazonaws.com/prod/contact", {
     method: "POST",
     headers: {
@@ -27,7 +27,7 @@ contactForm.addEventListener("submit", function(e){
         backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
       }).showToast();
       e.target.reset();
-      sending = false;
+      contactSending = false;
     })
     .catch(function() {
       Toastify({
@@ -36,6 +36,6 @@ contactForm.addEventListener("submit", function(e){
         stopOnFocus: false,
         backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
       }).showToast();
-      sending = false;
+      contactSending = false;
     });
 });

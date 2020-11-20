@@ -1,0 +1,24 @@
+.color-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.third {
+  width: 33%;
+  height: 20px;
+  display: inline-block;
+}
+
+.orange {
+  background-color: #F66E47;
+}
+
+.purple {
+  background-color: #9D74B5;
+}
+
+.green {
+  background-color: #D2DF64;
+}
+

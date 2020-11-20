@@ -174,6 +174,8 @@ function checkout(e) {
       e.target.reset();
       sending = false;
       orderDateRefresh();
+      bagContainer.style.display = "none";
+      ordersContainer.classList.remove("bag-open");
     })
     .catch(function() {
       Toastify({

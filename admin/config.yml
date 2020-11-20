@@ -9,6 +9,20 @@ local_backend: true
 media_folder: "images/upload"
 
 collections:
+  - label: Pages
+    name: pages
+    files:
+      - label: Our Story
+        name: our-story
+        file: story.html
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Content
+            name: body
+            widget: markdown
+
   - name: products # Used in routes, e.g., /admin/collections/blog
     label: Product # Used in the UI
     folder: "_products/" # The path to the folder where the documents are stored
