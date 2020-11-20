@@ -3,7 +3,7 @@ permalink: /our-story
 layout: our-story
 title: Our Story
 ---
-Saffron Catering was founded by a dynamic mother-daugther duo in 2016. Our goal was to share our love of homemade Indian cuisine with others, and from the heart of our home, began Saffron Fine Indian Catering; made with all the love, and care as we would for our own home.
+Saffron Catering was founded by a dynamic mother-daughter duo in 2016. Our goal was to share our love of homemade Indian cuisine with others, and from the heart of our home, began Saffron Fine Indian Catering; made with all the love, and care as we would for our own home.
 
 ![](/images/upload/rsz_dsc_8091-resized.png)
 
