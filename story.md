@@ -11,6 +11,4 @@ We invite you to browse through our website, place an order, call our number, or
 
 Let our carefully selected menus take you on a culinary journey!
 
-![](/images/upload/dsc_8091.jpg)
-
 ![](/images/upload/saffron-signature-cropped.png)
