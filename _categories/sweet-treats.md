@@ -5,4 +5,5 @@ products:
   - Gulab Jamun
   - Kulfi
   - Besan Ladoo
+  - Burfi
 ---
