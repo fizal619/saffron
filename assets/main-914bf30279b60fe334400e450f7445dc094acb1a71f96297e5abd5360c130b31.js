@@ -49,17 +49,17 @@ function orderDateRefresh() {
 }
 orderDateRefresh();
 
-if (homeContainer) {
-  homeContainer.style.backgroundImage = "url('/images/cover1.jpg')";
-  let counter = 2;
-  setInterval(function(){
-    if (counter > 5) {
-      counter = 1;
-    }
-    homeContainer.style.backgroundImage = "url('/images/cover"+counter+".jpg')";
-    counter++;
-  }, 15000);
-}
+// if (homeContainer) {
+//   homeContainer.style.backgroundImage = "url('/images/cover1.jpg')";
+//   let counter = 2;
+//   setInterval(function(){
+//     if (counter > 5) {
+//       counter = 1;
+//     }
+//     homeContainer.style.backgroundImage = "url('/images/cover"+counter+".jpg')";
+//     counter++;
+//   }, 15000);
+// }
 
 // #9A7DCA
 
@@ -187,5 +187,21 @@ function checkout(e) {
       sending = false;
     });
 
+}
+
+if (document.querySelector('.my-slider')) {
+  var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    slideBy: 'page',
+    speed: 1000,
+    autoplay: true,
+    controls: false,
+    nav: false,
+    rewind: true,
+    autoplayButton: document.createElement('p'),
+    mode: "gallery",
+    autoplayTimeout: 10000
+  });
 }
 ;

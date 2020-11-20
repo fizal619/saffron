@@ -60,3 +60,17 @@ collections:
         multiple: true
         search_fields: [ "title" ]
         display_fields: [ "title" ]
+
+  - name: testimonials
+    label: Testimonial
+    folder: "_testimonials/"
+    preview_path: /
+    create: true
+    fields:
+      - label: Customer Name
+        name: title
+        required: true
+      - label: Content
+        name: body
+        widget: markdown
+
