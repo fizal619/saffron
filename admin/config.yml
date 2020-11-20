@@ -14,11 +14,8 @@ collections:
     files:
       - label: Our Story
         name: our-story
-        file: story.html
+        file: story.md
         fields:
-          - label: Title
-            name: title
-            widget: string
           - label: Content
             name: body
             widget: markdown
