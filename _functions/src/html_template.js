@@ -96,7 +96,13 @@ module.exports = (body, order = false) => `
             .mj-column-per-60 { width:60%!important; }
             .mj-column-per-50 { width: 50%!important; }
             mj-column-per-33 { width: 33.333333333333336%!important; }
-            }</style>
+            }
+
+          .content {
+            font-size: 22px;
+          }
+
+            </style>
 
       </head>
       <body style="background-color:#FFFFFF;">
@@ -297,7 +303,7 @@ module.exports = (body, order = false) => `
             <tr>
               <td align="left" style="font-size:0px;padding:15px 15px 15px 15px;word-break:break-word;">
 
-                <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:11px;line-height:1.5;text-align:left;color:#000000;">
+                <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;line-height:1.5;text-align:left;color:#000000;">
                   ${body}
                 </div>
               </td>
