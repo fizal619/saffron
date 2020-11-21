@@ -73,4 +73,5 @@ collections:
       - label: Content
         name: body
         widget: markdown
+        required: true
 
