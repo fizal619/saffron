@@ -53,6 +53,13 @@ nav a:hover {
   text-align: center;
 }
 
+.caption {
+  background-color: whitesmoke;
+  padding: 20px 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 .testimonial-container  {
   width: 100%;
   margin: 0 auto;
@@ -62,36 +69,31 @@ nav a:hover {
 }
 
 .slide {
-  padding: 5px 20px ;
+  background-color: whitesmoke;
+  height: 250px;
+  padding: 20px 20px 40px 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
 }
 
 .testimonial-container p {
-  background-color: whitesmoke;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   margin: 0;
-}
-
-.testimonial-container .tns-inner {
-  transform: translate(0, -5px);
 }
 
 .testimonial-container .my-slider {
-  background-color: whitesmoke;
   min-height: 200px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
   margin: 0;
-  display: flex;
-  align-items: center;
 }
 
-.testimonial-container h4 {
-  background-color: whitesmoke;
-  padding: 10px 20px 0px 20px;
-  border-radius: 5px;
-  margin: 0;
-}
+
 
 .home img {
   width: 100%;
@@ -197,12 +199,12 @@ nav a:hover {
   width: 100px;
 }
 
-button.btn-outline-primary {
+button.btn-outline-primary, a.btn-outline-primary {
   color: #0a0a0a;
   border-color: #0a0a0a;
 }
 
-button.btn-outline-primary:hover {
+button.btn-outline-primary:hover, a.btn-outline-primary:hover {
   color: white;
   border-color: #0a0a0a;
   background-color: #0a0a0a;

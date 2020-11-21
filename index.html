@@ -6,21 +6,24 @@ title: home
 <main class="home-container">
   <span class="filter">
     <div class="home">
-      <img src="/images/note-card.png" alt="logo" />
-
+      <img src="/images/saffron-fg.png" alt="logo" />
+      <p class="caption">
+        <a href="/menu" class="btn btn-outline-primary">Place an Order Online</a>
+      </p>
     </div>
   </span>
   <div class="testimonial-container">
     <div class="container">
-      <h4 class="text-left">Testimonials</h4>
       <div class="my-slider">
         {% for item in site.testimonials %}
-          <div class="slide">
-            <p class="text-left">{{ item.content | markdownify  }}
+          <div>
+            <div class="slide">
+              <p class="text-left">{{ item.content | markdownify  }}
 
-            </p>
-            <span style="float: right;"> - {{ item.title }}</span>
+              </p>
+              <span style="float: right; font-weight: bold;"> - {{ item.title }}</span>
 
+            </div>
           </div>
         {% endfor %}
       </div>

@@ -192,15 +192,32 @@ function checkout(e) {
 if (document.querySelector('.my-slider')) {
   var slider = tns({
     container: '.my-slider',
-    items: 1,
     slideBy: 'page',
     speed: 1000,
     autoplay: true,
     controls: false,
     nav: false,
     rewind: true,
+    gutter: 3,
+    mouseDrag: true,
     autoplayButton: document.createElement('p'),
-    mode: "gallery",
-    autoplayTimeout: 10000
+    autoplayTimeout: 10000,
+    responsive: {
+      1200: {
+        items: 3
+      },
+      1100: {
+        items: 2
+      },
+      800: {
+        items: 2
+      },
+      640: {
+        items: 1
+      },
+      500: {
+        items: 1
+      }
+    }
   });
 }
