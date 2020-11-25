@@ -6,5 +6,5 @@ options:
   - Mild
   - Spicy
   - Extra Spicy
-description: 20 pcs served with tangy raita. (gluten-free, contains dairy)
+description: 20pcs served with raita. (gluten-free, contains dairy)
 ---
