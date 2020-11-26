@@ -6,5 +6,5 @@ options:
   - Garlic Rice
   - Garlic Chapati
 description: Our signature creamy and spicy Butter Chicken served with a choice
-  of Garlic Chapati or Garlic Basmati Rice
+  of Garlic Chapati or Garlic Basmati Rice. (Minimum of 8 servings)
 ---
