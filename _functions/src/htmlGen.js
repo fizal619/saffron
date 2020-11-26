@@ -1,4 +1,5 @@
-const htmlTemplate = require("./html_template");
+const contactHtmlTemplate = require("./contact_html_template");
+const orderHtmlTemplate = require("./order_html_template");
 
 function commas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -17,18 +18,17 @@ module.exports = (event) => {
   } = JSON.parse(event.body);
 
   if (type === "contact") {
-    return htmlTemplate(`
+    return contactHtmlTemplate(`
       <h4>${customer} (${email}) said:</h4>
       <p>${body}</p>
       <br>
-
   `);
   }
 
   if (type === "order") {
     const items = Object.values(bag);
     let runningTotal = 0;
-    return htmlTemplate(`
+    return orderHtmlTemplate(`
       <h4>${customer} (${email}, ${phone})</h4>
       <p>${address}</p>
       <hr/>
@@ -47,7 +47,7 @@ module.exports = (event) => {
       <p>A representative will call you soon to confirm your order.</p>
       <p>This message was sent from a unmonitored mailbox.</p>
       <p>Please do not reply to this email. Contact supriya@saffroncateringgy.com with any concerns</p>
-    `, true);
+    `);
   }
 
 
