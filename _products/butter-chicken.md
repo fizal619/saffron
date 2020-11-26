@@ -1,5 +1,5 @@
 ---
-title: Butter Chicken (min. 8 servings)
+title: "Chicken Makhani "
 price: 2,500
 image: /images/upload/butter-chicken.jpg
 options:
