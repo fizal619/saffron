@@ -95,6 +95,8 @@ title: order
   <br>
 
   {%- for category in site.categories -%}
+    {% if category.hidden == false %}
+
     <h2>{{ category.title }}</h2>
     <br>
     <div class="row">
@@ -113,6 +115,8 @@ title: order
       {%- endfor -%}
     </div>
     <br>
+
+    {% endif %}
   {%- endfor -%}
 
   <div class="row">

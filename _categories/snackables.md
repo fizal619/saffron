@@ -1,5 +1,6 @@
 ---
 title: Snackables
+hidden: false
 products:
   - "Besan Pakora "
   - Chicken Samosas
