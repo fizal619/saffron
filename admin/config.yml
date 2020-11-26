@@ -52,6 +52,10 @@ collections:
       - label: Display Name
         name: title
         required: true
+      - label: "Hide Category"
+        name: "hidden"
+        widget: "boolean"
+        default: false
       - label: Products
         name: products
         widget: relation

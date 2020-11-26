@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
   <link rel="stylesheet" type="text/css" href="/assets/modal-b3ce94960d67f68f58c39852c1eff1caeadf474dbb8e4dbf93d247719fc1409d.css">
-  <link rel="stylesheet" type="text/css" href="/assets/main-bd90a231b6698b48eb97b4135e5131deeb06f0926a222eac3f9aa5b36282c45f.css">
+  <link rel="stylesheet" type="text/css" href="/assets/main-c16d91b4ab147bd95a024027a2993cf7ecea50566e9a8f59e4de4d95255df862.css">
   <link rel="stylesheet" type="text/css" href="/assets/footer-59008853d101798c8ebfc809ee692dde3bae9ed3b5eb03806d2d5424bf6f2595.css">
 </head>
 <body><nav>
@@ -108,64 +108,9 @@
     </div>
   </div>
 
-  <br><h2>Entrees</h2>
-    <br>
-    <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <div id="entrees-butter-chicken-card" class="product-card">
-            <span class="price">$2500</span>
-            <img src="/assets/a75af0-af04d72bf726709080e118e85a69bfc3d05ea725c8f10e0e911d2af60c78eb68.jpg">
-            <p class="title">Murg Makhani </p>
-            <p class="desc">Our signature creamy and spicy Butter Chicken served with a choice of Garlic Chapati or Garlic Basmati Rice. (Minimum of 8 servings)</p><script>
-  document.querySelector("#entrees-butter-chicken-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="butter-chicken-modal" class="product-modal-container">
-          <img src="/assets/e56339-bb7fcacbba61a9edf07efaef0ee5b62de67aef6e4eed7beed36ae4c70d29c7dc.jpg">
-          <span class="modal-desc"> Our signature creamy and spicy Butter Chicken served with a choice of Garlic Chapati or Garlic Basmati Rice. (Minimum of 8 servings) </span>
-          <br>
-          <div class="product-modal-content">
-            <strong>
-              <p>Murg Makhani  - $2500</p>
-            </strong>
-            <form id="-form"><input required type="radio" id="GarlicRice" name="option" value="Garlic Rice">
-                <label class="label" for="GarlicRice"> Garlic Rice </label><input required type="radio" id="GarlicChapati" name="option" value="Garlic Chapati">
-                <label class="label" for="GarlicChapati"> Garlic Chapati </label>
-                <br>
-              
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Murg Makhani ">
-              <input type="hidden" name="price" value="2500">
-            </form>
-            <center>
-              <button id="butter-chicken-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#butter-chicken-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div></div>
-    <br><h2>Snackables</h2>
+  <br>
+
+    <h2>Snackables</h2>
     <br>
     <div class="row">
         <div class="col-xs-12 col-md-6">
@@ -230,14 +175,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-chicken-samosas-card" class="product-card">
             <span class="price">$2500</span>
-            <img src="/assets/040177-2fb13e4bfdc991fd4e35bc75c3afc479d7b1638dc85c1de18ff3937b67d84769.png">
+            <img src="/assets/040177-77adf743c188fb0d721de6ef61f74459c6e0f9c6b99bf82828c54f14eca7a7f0.png">
             <p class="title">Chicken Samosas</p>
             <p class="desc">12 samosas served with sweet tamarind chutney</p><script>
   document.querySelector("#snackables-chicken-samosas-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="chicken-samosas-modal" class="product-modal-container">
-          <img src="/assets/9cc49a-a1c00a22674479da2120f55481db120ba9d3960ed85fa945a173a799bc0052a5.png">
+          <img src="/assets/9cc49a-59270c4283d4ab9fa0e9150a696958fe091033906ba0b5a1f81cd82676cdc9ec.png">
           <span class="modal-desc"> 12 samosas served with sweet tamarind chutney </span>
           <br>
           <div class="product-modal-content">
@@ -288,14 +233,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-chicken-and-veg-samosas-card" class="product-card">
             <span class="price">$3000</span>
-            <img src="/assets/9b3213-e9293b33ae977f38f085ec4305a27018d94bda3d17497521b6effa89c11b7ec7.png">
+            <img src="/assets/9b3213-e985d5483f35df56bf57406291ff4ec66590cb5078c9b007369edb49e2c66a4f.png">
             <p class="title">Chicken & Veg Samosas</p>
             <p class="desc">12 samosas served with sweet tamarind chutney.</p><script>
   document.querySelector("#snackables-chicken-and-veg-samosas-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="chicken-and-veg-samosas-modal" class="product-modal-container">
-          <img src="/assets/b09875-0044bd43d3741ee05c47ea37b71cfd96c7310966ea144a928b5d9f160f2463ce.png">
+          <img src="/assets/b09875-bdb844807754460af59ab8a0f8b3ec3c5a542d7463563c878bd3e68b6f8d0eb0.png">
           <span class="modal-desc"> 12 samosas served with sweet tamarind chutney. </span>
           <br>
           <div class="product-modal-content">
@@ -346,14 +291,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-mixed-veg-samosas-card" class="product-card">
             <span class="price">$2000</span>
-            <img src="/assets/1f5beb-051d7dc3ebac45a80ee972f83006e437d717b73cb28e6ced023b1372b03c4a75.png">
+            <img src="/assets/1f5beb-cbecfbaee85d0be3d1f04724c5c9e3fee03ac89d3dee44bcdb67eb567135d124.png">
             <p class="title">Mixed Veggie Samosas</p>
             <p class="desc">12 samosas served with sweet tamarind chutney.</p><script>
   document.querySelector("#snackables-mixed-veg-samosas-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="mixed-veg-samosas-modal" class="product-modal-container">
-          <img src="/assets/7767a4-208dcecc06846c498c0dd4eadb93b45d085cfe4de8c44a162fd2a420b04447d4.png">
+          <img src="/assets/7767a4-7c080fed93ae66e494f5b7f1ecc304570262bc29aad099e066d63478e1dae8f2.png">
           <span class="modal-desc"> 12 samosas served with sweet tamarind chutney. </span>
           <br>
           <div class="product-modal-content">
@@ -404,14 +349,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-tandoori-chicken-nuggets-card" class="product-card">
             <span class="price">$6000</span>
-            <img src="/assets/be8c6b-cd6360c4d3f7b9077d7029f608c27e759be9758a0fe96c9a4aae0ebba3c28051.png">
+            <img src="/assets/be8c6b-bb2507d5d6ba693550102159e9ff18a98e62577840a979c08417a3622b57a7e4.png">
             <p class="title">Tandoori Chicken Nuggets</p>
             <p class="desc">20pcs served with raita. (gluten-free, contains dairy)</p><script>
   document.querySelector("#snackables-tandoori-chicken-nuggets-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="tandoori-chicken-nuggets-modal" class="product-modal-container">
-          <img src="/assets/c57352-a8ac1a02b30528c0049146332df8639d8fdafd2a79126f38830d796f0d3aae10.png">
+          <img src="/assets/c57352-115705f12b0d084bcf225ad17e948397e041d3ead09c798801729eda22a80b64.png">
           <span class="modal-desc"> 20pcs served with raita. (gluten-free, contains dairy) </span>
           <br>
           <div class="product-modal-content">
@@ -459,14 +404,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-tandoori-paneer-nuggets-card" class="product-card">
             <span class="price">$6000</span>
-            <img src="/assets/61d060-b66dac9ce78cdb01046944e89be093e0261ff33957fc0b177cbf23173f6a2a22.png">
+            <img src="/assets/61d060-fd0222023b0940fca0102ac0b4ef2fea8fbd4c9d1d0b392bf12e4d08cb6d7e19.png">
             <p class="title">Tandoori Paneer Nuggets</p>
             <p class="desc">20pcs served with raita. (gluten-free, contains dairy)</p><script>
   document.querySelector("#snackables-tandoori-paneer-nuggets-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="tandoori-paneer-nuggets-modal" class="product-modal-container">
-          <img src="/assets/88f2ce-a05b8bd0f4e89ab8b84d2677fca3c7652c917a91b1d3edad43c93d98150be499.png">
+          <img src="/assets/88f2ce-58687f3bddc8f939f517c5da670b217afdb89e814b0e416444e4f80c362d4963.png">
           <span class="modal-desc"> 20pcs served with raita. (gluten-free, contains dairy) </span>
           <br>
           <div class="product-modal-content">
@@ -514,14 +459,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-veggie-samosas-card" class="product-card">
             <span class="price">$1500</span>
-            <img src="/assets/f25eee-5231b3d574f888f88cac97293effa443ffed6b6ecb8a50e38a9bc0babcd7ca9a.png">
+            <img src="/assets/f25eee-6e82d131e767e51ff5e36aba557f578f0a17edcc086008e6ac18358ab4f5101b.png">
             <p class="title">Veggie Samosas</p>
             <p class="desc">12 samosas served with sweet tamarind chutney</p><script>
   document.querySelector("#snackables-veggie-samosas-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="veggie-samosas-modal" class="product-modal-container">
-          <img src="/assets/d1285a-bbc785dc0a2af10f601cde5b7d863e21b6e71f72fbc87d3f7177a7b3d00fd1ca.png">
+          <img src="/assets/d1285a-3697a2d2ceff607064e6917adc41b933bee63d79b582ca9012532a09c330a716.png">
           <span class="modal-desc"> 12 samosas served with sweet tamarind chutney </span>
           <br>
           <div class="product-modal-content">
@@ -569,77 +514,24 @@
 </script>
 </div>
         </div></div>
-    <br><h2>Specials</h2>
     <br>
-    <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <div id="specials-butter-chicken-1-card" class="product-card">
-            <span class="price">$2500</span>
-            <img src="/assets/a75af0-af04d72bf726709080e118e85a69bfc3d05ea725c8f10e0e911d2af60c78eb68.jpg">
-            <p class="title">Butter Chicken</p>
-            <p class="desc">Our signature Butter Chicken with Garlic Chapati or Garlic Basmati Rice. </p><script>
-  document.querySelector("#specials-butter-chicken-1-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="butter-chicken-1-modal" class="product-modal-container">
-          <img src="/assets/e56339-bb7fcacbba61a9edf07efaef0ee5b62de67aef6e4eed7beed36ae4c70d29c7dc.jpg">
-          <span class="modal-desc"> Our signature Butter Chicken with Garlic Chapati or Garlic Basmati Rice.  </span>
-          <br>
-          <div class="product-modal-content">
-            <strong>
-              <p>Butter Chicken - $2500</p>
-            </strong>
-            <form id="-form"><input required type="radio" id="GarlicChapati" name="option" value="Garlic Chapati">
-                <label class="label" for="GarlicChapati"> Garlic Chapati </label><input required type="radio" id="GarlicRice" name="option" value="Garlic Rice">
-                <label class="label" for="GarlicRice"> Garlic Rice </label>
-                <br>
-              
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Butter Chicken">
-              <input type="hidden" name="price" value="2500">
-            </form>
-            <center>
-              <button id="butter-chicken-1-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#butter-chicken-1-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div></div>
-    <br><h2>Sweet Treats</h2>
+
+    
+
+    <h2>Sweet Treats</h2>
     <br>
     <div class="row">
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-beshan-ladoo-card" class="product-card">
             <span class="price">$7200</span>
-            <img src="/assets/832705-e45d7387110eebb90249cac07222d30104f805acb65292a20cec663c9f031f35.png">
+            <img src="/assets/832705-93a20b0d8fa91c013079730b721a1ee4c1d77717ff35b7bd0defe80973b5a4ac.png">
             <p class="title">Besan Ladoo</p>
             <p class="desc">24pcs (gluten & dairy free)</p><script>
   document.querySelector("#sweet-treats-beshan-ladoo-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="beshan-ladoo-modal" class="product-modal-container">
-          <img src="/assets/16f831-66ab8278dc93aec1441b703a57ea429b31d7fc9a7e39bb8997fbb0d8e5194f62.png">
+          <img src="/assets/16f831-24d38012e0f9b8ccc3a66d8ce8dc6b0592044b1a03801d0fb23d4fff3436a349.png">
           <span class="modal-desc"> 24pcs (gluten & dairy free) </span>
           <br>
           <div class="product-modal-content">
@@ -682,14 +574,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-burfi-card" class="product-card">
             <span class="price">$3000</span>
-            <img src="/assets/19964e-85ae80cc6a0594d98556df5ed480283af05b8e17b8866d3225d7a5647ca6d64b.png">
+            <img src="/assets/19964e-ecb4a5795a1345800c4eff810c2e8d619cd5566c257568f9ff430200a50299d6.png">
             <p class="title">Burfi</p>
             <p class="desc">15pcs (gluten-free, contains dairy)</p><script>
   document.querySelector("#sweet-treats-burfi-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="burfi-modal" class="product-modal-container">
-          <img src="/assets/6511ed-fbeefe008157a766dd959a3da2bc9ab1272303273db20a689222033e1eca6873.png">
+          <img src="/assets/6511ed-91df302573e1dc6a9e690f574a20e3c2ad5d1dc0dc29a676c47673964ab21774.png">
           <span class="modal-desc"> 15pcs (gluten-free, contains dairy) </span>
           <br>
           <div class="product-modal-content">
@@ -732,14 +624,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-gulab-jamun-card" class="product-card">
             <span class="price">$1200</span>
-            <img src="/assets/943075-6460577c825b1e36d2ebc198b4823723b143f69afe9cf27686bb11b0e969348b.png">
+            <img src="/assets/943075-04e3d17b9bc15161295689004d6778ecce4473efccd99a37badca057f94f94bc.png">
             <p class="title">Gulab Jamun</p>
             <p class="desc">12pcs (gluten-free, contains dairy)</p><script>
   document.querySelector("#sweet-treats-gulab-jamun-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="gulab-jamun-modal" class="product-modal-container">
-          <img src="/assets/5bc017-fef8765da388b3894be281e14f8334f42f11b83205a4a8508a0a14aeea905320.png">
+          <img src="/assets/5bc017-372298b08d11ffa778724a3627c55ebb197e018603956f3a35299c14b1022ace.png">
           <span class="modal-desc"> 12pcs (gluten-free, contains dairy) </span>
           <br>
           <div class="product-modal-content">
@@ -782,14 +674,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-kulfi-card" class="product-card">
             <span class="price">$5000</span>
-            <img src="/assets/7d53e8-d5845fcda96096c805fa5c9f1ea6273b8fe4fb7c971644c0ac6918bbe74e69c5.png">
+            <img src="/assets/7d53e8-cf74e9bbf5a9baf51c8ee12b2d2f72a5a17b3eeaf46799c7699b4bbc5c7e522a.png">
             <p class="title">Kulfi</p>
             <p class="desc">Homemade Indian ice-cream, serves approximately 5 persons. (Gluten-free, contains dairy, nuts are optional)</p><script>
   document.querySelector("#sweet-treats-kulfi-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="kulfi-modal" class="product-modal-container">
-          <img src="/assets/d4400d-fb3c50b2bc556f158ae2ea7a906cd2543a054d20f108f2254ecdc89ffff56471.png">
+          <img src="/assets/d4400d-b8b6b43cef280dc8ab40666d824d254adbd6f80259f50f6b654ee60a3be452e4.png">
           <span class="modal-desc"> Homemade Indian ice-cream, serves approximately 5 persons. (Gluten-free, contains dairy, nuts are optional) </span>
           <br>
           <div class="product-modal-content">
@@ -839,14 +731,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-rasmalai-card" class="product-card">
             <span class="price">$10000</span>
-            <img src="/assets/0ce1af-834c61da3239cc00a356a36f1c25ad8bcb5147df042ab379415f3b561b186403.png">
+            <img src="/assets/0ce1af-3259e286aecd4a0cda8fb65baddd065935af5e92aa89e7f446b6c02838d88cce.png">
             <p class="title">Rasmalai</p>
             <p class="desc">24pcs (gluten-free, contains milks & nuts)</p><script>
   document.querySelector("#sweet-treats-rasmalai-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="rasmalai-modal" class="product-modal-container">
-          <img src="/assets/374044-4c795ce0dd22895f8e2e6b96e0c96c9fbc791e81c6ec2c39776db6e155fb7559.png">
+          <img src="/assets/374044-d65446e699e34406b24e28c146d5a45e975bb71db830bcb0666d28541d1056f5.png">
           <span class="modal-desc"> 24pcs (gluten-free, contains milks & nuts) </span>
           <br>
           <div class="product-modal-content">
@@ -886,7 +778,9 @@
 </script>
 </div>
         </div></div>
-    <br><div class="row">
+    <br>
+
+    <div class="row">
     <div class="col-xs-12 col-md-6">
 
     </div>
@@ -915,7 +809,7 @@
         Phone: <a href="tel:+592-649-6812">+592-649-6812</a>
       </p>
       <p>
-        Whatsapp: <a href="tel:+592-623-5453">+592-649-6812</a>
+        Whatsapp: <a href="tel:+592-623-5453">+592-623-5453</a>
       </p>
       <p>
         <a target="__blank" href="https://www.instagram.com/saffroncateringgy/">
