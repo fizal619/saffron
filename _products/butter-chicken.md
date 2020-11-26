@@ -1,5 +1,5 @@
 ---
-title: Butter Chicken
+title: Butter Chicken (min. 8 servings)
 price: 2,500
 image: /images/upload/butter-chicken.jpg
 options:
