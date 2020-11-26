@@ -1,5 +1,5 @@
 ---
-title: Butter Chicken
+title: Chicken Makhani
 price: 2,500
 image: /images/upload/butter-chicken.jpg
 options:
