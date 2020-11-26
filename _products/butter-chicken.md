@@ -1,5 +1,5 @@
 ---
-title: "Chicken Makhani "
+title: "Murg Makhani "
 price: 2,500
 image: /images/upload/butter-chicken.jpg
 options:
