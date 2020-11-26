@@ -1,10 +1,9 @@
 ---
 title: "Murg Makhani "
-price: 2,500
+price: 12,500
 image: /images/upload/butter-chicken.jpg
 options:
   - Garlic Rice
   - Garlic Basmati Chapati
-description: Butter Chicken served with Garlic Chapati or Garlic Basmati Rice.
-  (Min. of 8 servings)
+description: Butter Chicken served with Garlic Chapati or Garlic Basmati Rice. (Serves 5)
 ---
