@@ -1,9 +1,9 @@
 ---
-title: "Murg Makhani "
+title: Murgh Makhani (Butter Chicken, serves 5)
 price: 12,500
 image: /images/upload/butter-chicken.jpg
 options:
   - Garlic Rice
   - Garlic Basmati Chapati
-description: Butter Chicken served with Garlic Chapati or Garlic Basmati Rice. (Serves 5)
+description: "Creamy Butter Chicken with your choice of side. "
 ---
