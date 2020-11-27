@@ -1,6 +1,6 @@
 ---
 title: Specials
-hidden: true
+hidden: false
 products:
   - Murgh Makhani
 ---
