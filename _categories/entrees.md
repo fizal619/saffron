@@ -1,5 +1,6 @@
 ---
 title: Entrees
+hidden: true
 products:
-  - "Murg Makhani "
+  - Murgh Makhani (Butter Chicken, serves 5)
 ---
