@@ -1,5 +1,6 @@
 ---
 title: Specials
+hidden: true
 products:
-  - Butter Chicken
+  - Murgh Makhani
 ---
