@@ -10,6 +10,5 @@ options:
   - Mild
   - Spicy
   - Extra Spicy
-description: 20pcs of pholourie's tastier gluten-free cousin served with sweet
-  tamarind chutney and tangy raita. (Raita contains dairy)
+description: 20pcs served with sweet tamarind chutney.
 ---
