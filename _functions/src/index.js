@@ -1,12 +1,17 @@
 const AWS = require('aws-sdk');
 const SES = new AWS.SES({ region: 'us-east-1' });
 const htmlGen = require("./htmlGen");
-const base62 = require("base62/lib/ascii");
+const { default: ShortUniqueId } = require('short-unique-id');
+const options = {
+  dictionary: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
+  length: 6
+}
 
 exports.handler = async (event, context)  => {
   console.log("EVENT", event);
   console.log("CONTEXT", context);
-  const orderNo = base62.encode((Date.now() + '' + Math.random()).replace(".", ""));
+  const uid = new ShortUniqueId(options);
+  const orderNo = uid();
   const {
     customer,
     email,
