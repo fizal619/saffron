@@ -5,7 +5,7 @@ function commas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-module.exports = (event) => {
+module.exports = (event, orderNo) => {
   const {
     customer,
     email,
@@ -29,6 +29,7 @@ module.exports = (event) => {
     const items = Object.values(bag);
     let runningTotal = 0;
     return orderHtmlTemplate(`
+      <h3>Order ${orderNo}</h3>
       <h4>${customer} (${email}, ${phone})</h4>
       <p>${address}</p>
       <hr/>

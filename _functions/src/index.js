@@ -1,10 +1,12 @@
 const AWS = require('aws-sdk');
 const SES = new AWS.SES({ region: 'us-east-1' });
 const htmlGen = require("./htmlGen");
+const base62 = require("base62/lib/ascii");
 
 exports.handler = async (event, context)  => {
   console.log("EVENT", event);
   console.log("CONTEXT", context);
+  const orderNo = base62.encode((Date.now() + '' + Math.random()).replace(".", ""));
   const {
     customer,
     email,
@@ -17,11 +19,11 @@ exports.handler = async (event, context)  => {
   } = {
     from: "noreply@saffroncateringgy.com",
     reply_to:  "noreply@saffroncateringgy.com",
-    subject: `Saffron Catering: ${type === "contact" ? "message from" : "Order for"} ${customer}`
+    subject: `Saffron Catering: ${type === "contact" ? "message from" : `Order #${orderNo}: `} ${customer}`
   };
   const fromBase64 = Buffer.from(from).toString('base64');
 
-  const htmlBody = htmlGen(event);
+  const htmlBody = htmlGen(event, orderNo);
 
   const recipients = ["admin@saffroncateringgy.com", "supriya@saffroncateringgy.com"];
 

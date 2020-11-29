@@ -434,7 +434,7 @@ module.exports = (body, order = false) => `<!doctype html>
       <tr>
         <td style="width:114px;">
 
-  <img height="auto" src="https://s3-eu-west-1.amazonaws.com/topolio/uploads/5faadab2e31cd/1605885409.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="114">
+  <img height="auto" src="https://saffroncateringgy.com/images/saffronlogoclean.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="114">
 
         </td>
       </tr>
