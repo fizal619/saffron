@@ -9,7 +9,7 @@ Saffron Catering was founded by a dynamic mother-daughter duo in 2016. Our goal 
 
 Over time our name was shortened to Saffron Catering, but we continued to serve up fine Indian cuisine with the finest spices from around the world. Coupled with fresh, local herbs and ingredients, our menu is strategic in creating mouthwatering dishes that cater for the entire family. From our vegan to gluten free options, we ensure there's something for everyone.
 
-We invite you to browse through [our website](https://saffroncateringgy.com/), [place an order](https://saffroncateringgy.com/order), or message us using our [contact form](https://saffroncateringgy.com/contact), [Facebook](https://www.facebook.com/saffroncateringgy), [Instagram ](https://www.instagram.com/saffroncateringgy/)or [WhatsApp](https://wa.me/message/DNU575YSQMGRO1).
+We invite you to browse through [our website](https://saffroncateringgy.com/), [place an order](https://saffroncateringgy.com/menu), or message us using our [contact form](https://saffroncateringgy.com/contact), [Facebook](https://www.facebook.com/saffroncateringgy), [Instagram ](https://www.instagram.com/saffroncateringgy/)or [WhatsApp](https://wa.me/message/DNU575YSQMGRO1).
 
 Let our carefully selected menus take you on a culinary journey!
 
