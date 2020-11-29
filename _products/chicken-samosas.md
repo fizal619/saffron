@@ -10,5 +10,5 @@ options:
   - Air-fried
   - Frozen
 name: Chicken Samosas
-description: 12 samosas served with sweet tamarind chutney
+description: 12pcs served with sweet tamarind chutney
 ---
