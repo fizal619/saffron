@@ -10,5 +10,5 @@ options:
   - Mild
   - Spicy
   - Extra Spicy
-description: 20pcs served with sweet tamarind chutney and tangy raita.
+description: 20pcs served with sweet tamarind chutney.
 ---
