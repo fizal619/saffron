@@ -2,5 +2,6 @@
 title: Specials
 hidden: false
 products:
-  - Murgh Makhani
+  - Butter Chicken - 5 Servings
+  - Butter Chicken - 1 Serving
 ---

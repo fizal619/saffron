@@ -1,5 +1,5 @@
 ---
-title: Murgh Makhani (Butter Chicken, serves 5)
+title: Butter Chicken - 5 Servings
 price: 12,500
 image: /images/upload/butter-chicken.jpg
 options:
