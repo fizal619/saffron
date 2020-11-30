@@ -64,10 +64,15 @@ orderDateRefresh();
 // #9A7DCA
 
 function addToBagHandler(e) {
+  console.log(e)
   e.preventDefault();
+  let optionals;
+  if (e.target.spiciness) {
+     optionals = e.target.spiciness.value + " " + (e.target.option ? e.target.option.value : "")
+  }
   const itemObj = {
     name: e.target.name.value,
-    option: e.target.option ? e.target.option.value : "",
+    option: optionals || (e.target.option ? e.target.option.value : ""),
     qty: parseInt(e.target.qty.value),
     price: parseInt(e.target.price.value.replace(",","")),
     instructions: e.target.instructions.value
