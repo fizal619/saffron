@@ -4,16 +4,18 @@
       const instance = basicLightbox.create(`
         <div id="{{ product.slug }}-modal" class="product-modal-container">
           {% asset '{{productFilename}}' magick:resize='400' magick:crop='400x300+0+0' magick:gravity='center' %}
-          <span class="modal-desc"> {{ product.description }} </span>
+          <span class="modal-title"> {{ product.title }} - ${{ product.price }}</span>
           <br>
           <div class="product-modal-content">
-            <strong>
-              <p>{{ product.title }} - ${{ product.price }}</p>
-            </strong>
+            {% if product.description %}
+              <p class="product-desc">{{ product.description }}</p>
+            {% endif %}
             <form id="{{product-slug}}-form">
               {%- for item in product.options -%}
-                <input required type="radio" id="{{item | replace: ' ', ''}}" name="option" value="{{item}}">
-                <label class="label" for="{{item | replace: ' ', ''}}"> {{item}} </label>
+                <div class="options-group" >
+                  <input required type="radio" id="{{item | replace: ' ', ''}}" name="option" value="{{item}}">
+                  <label class="label" for="{{item | replace: ' ', ''}}"> {{item}} </label>
+                </div>
               {%- endfor -%}
               {% if product.options.size > 0 %}
                 <br>
