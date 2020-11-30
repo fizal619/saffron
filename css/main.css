@@ -240,6 +240,7 @@ button.btn-outline-primary:hover, a.btn-outline-primary:hover {
 
 .product-modal-content {
   padding: 10px;
+  width: 300px;
 }
 
 .product-modal-content label {
@@ -247,7 +248,9 @@ button.btn-outline-primary:hover, a.btn-outline-primary:hover {
 }
 
 .product-modal-container img {
-  width: 100%;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .product-modal-content .qty {
@@ -260,6 +263,16 @@ button.btn-outline-primary:hover, a.btn-outline-primary:hover {
 
 .product-modal-content center {
   margin-bottom: 10px;
+}
+
+.product-desc {
+  font-weight: lighter;
+  font-size: 1em;
+  margin-bottom: 0.3em;
+}
+
+.options-group {
+  display: inline-block;
 }
 
 #bag-icon {
@@ -325,15 +338,16 @@ button.btn-outline-primary:hover, a.btn-outline-primary:hover {
   cursor: pointer;
 }
 
-.modal-desc {
+.modal-title {
   background: rgba(245,245,245,0.8);
   font-weight: lighter;
   padding: 5px 10px;
   transform: translateX(-25px);
   position: absolute;
-  top: 250px;
+  top: 5px;
   width: 100%;
   left: 25px;
+  font-weight: bold;
 }
 
 .bag-items {
