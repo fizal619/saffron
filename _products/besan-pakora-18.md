@@ -7,6 +7,7 @@ options:
   - Baigan
   - Spinach
   - Plain
+spiciness:
   - Mild
   - Spicy
   - Extra Spicy

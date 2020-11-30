@@ -20,6 +20,15 @@
               {% if product.options.size > 0 %}
                 <br>
               {% endif %}
+              {%- for item in product.spiciness -%}
+                <div class="options-group" >
+                  <input required type="radio" id="{{item | replace: ' ', ''}}" name="spiciness" value="{{item}}">
+                  <label class="label" for="{{item | replace: ' ', ''}}"> {{item}} </label>
+                </div>
+              {%- endfor -%}
+              {% if product.spiciness.size > 0 %}
+                <br>
+              {% endif %}
               <label for="qty">Quantity:</label>
               <input required value="1" min="1" type="number" name="qty" class="qty" />
               <br>

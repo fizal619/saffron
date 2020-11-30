@@ -41,6 +41,12 @@ collections:
         allow_add: true
         default: []
         required: false
+      - label: Spiciness (if applicable)
+        name: spiciness
+        widget: list
+        allow_add: true
+        default: []
+        required: false
       - {label: "Description", name: "description", widget: "string", required: false}
 
   - name: categories
