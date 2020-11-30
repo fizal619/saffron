@@ -8,8 +8,9 @@ const bagItems = document.querySelector(".rendered-bag-items");
 const ordersContainer = document.querySelector(".order-container");
 const orderForm = document.querySelector("#order-form");
 const orderDate = document.querySelector("#date-input");
+const checkoutButton = document.querySelector("#order-form button");
 
-const bag = {}
+let bag = {}
 let runningTotalTop = 0;
 let sending = false;
 
@@ -106,6 +107,9 @@ function removeFromBag(e) {
 }
 
 function renderBag() {
+  if (!sending && checkoutButton) {
+    checkoutButton.textContent = "Checkout";
+  }
   const bagKeys = Object.keys(bag);
   let runningTotal = 0;
   bagItems.innerHTML = "";
@@ -160,6 +164,7 @@ function checkout(e) {
     type: "order"
   }
   sending = true;
+  checkoutButton.textContent = "Processing Order...";
   fetch("https://6hk1ho7jw9.execute-api.us-east-1.amazonaws.com/prod/contact", {
     method: "POST",
     headers: {
@@ -170,19 +175,23 @@ function checkout(e) {
     .then(function(r) { return r.json() })
     .then(function(data) {
       console.log(data);
+      e.target.reset();
+      sending = false;
+      bag = {};
+      renderBag();
+      checkoutButton.textContent = "Checkout";
+      orderDateRefresh();
+      bagContainer.style.display = "none";
+      ordersContainer.classList.remove("bag-open");
       Toastify({
         text: "Order Sent. We'll Be in touch! 📧",
         duration: 2000,
         stopOnFocus: false,
         backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
       }).showToast();
-      e.target.reset();
-      sending = false;
-      orderDateRefresh();
-      bagContainer.style.display = "none";
-      ordersContainer.classList.remove("bag-open");
     })
-    .catch(function() {
+    .catch(function(e) {
+      console.log(e)
       Toastify({
         text: "Order Not Sent. Something went wrong.",
         duration: 2000,
@@ -190,6 +199,7 @@ function checkout(e) {
         backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
       }).showToast();
       sending = false;
+      checkoutButton.textContent = "Checkout";
     });
 
 }
