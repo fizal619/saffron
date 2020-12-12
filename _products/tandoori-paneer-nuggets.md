@@ -6,5 +6,5 @@ spiciness:
   - Mild
   - Spicy
   - Extra Spicy
-description: 20pcs served with raita. (gluten-free, contains dairy)
+description: 20pcs served with raita. (gluten-free, contains dairy) *12hr lead time*
 ---
