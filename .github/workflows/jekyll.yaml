@@ -46,7 +46,7 @@ jobs:
       - run: ls
 
       - name: Deploy to GitHub Pages
-        uses: Cecilapp/GitHub-Pages-deploy@master
+        uses: Cecilapp/GitHub-Pages-deploy@2.0.1
         env:
           EMAIL: fizal.sarif@gmail.com
           GH_TOKEN: ${{ secrets.JEKYLL_PAT }}
