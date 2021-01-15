@@ -412,3 +412,12 @@ button.btn-outline-primary:hover, a.btn-outline-primary:hover {
   max-width: 100%;
   text-align: center;
 }
+
+input[type=radio].radiogroup {
+  display: inline-block;
+  width: auto;
+}
+
+.deliveryoptionlabel:hover, input[type=radio].radiogroup:hover {
+  cursor: pointer;
+}
