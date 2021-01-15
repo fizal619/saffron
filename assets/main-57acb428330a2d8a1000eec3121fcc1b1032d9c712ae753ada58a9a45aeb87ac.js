@@ -158,7 +158,7 @@ function checkout(e) {
     customer: e.target.name.value,
     email: e.target.email.value,
     phone: e.target.phone.value,
-    date: e.target.date.value,
+    date: e.target.deliveryoption.value + " on " + e.target.date.value,
     address: e.target.address.value,
     bag: bag,
     type: "order"
