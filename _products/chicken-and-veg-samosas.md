@@ -10,5 +10,5 @@ spiciness:
   - Mild
   - Spicy
   - Extra Spicy
-description: 12pcs served with sweet tamarind chutney.
+description: 12pcs served with sweet tamarind chutney. (Contains chicken, carrots, & peas)
 ---
