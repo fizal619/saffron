@@ -10,5 +10,5 @@ spiciness:
   - Mild
   - Spicy
   - Extra Spicy
-description: 12pcs served with sweet tamarind chutney. (Contains chicken, carrots, & peas)
+description: 12 chicken samosas with carrots & peas served with sweet tamarind chutney.
 ---
