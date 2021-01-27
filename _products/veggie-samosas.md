@@ -10,5 +10,5 @@ spiciness:
   - Mild
   - Spicy
   - Extra Spicy
-description: 12pcs served with sweet tamarind chutney
+description: 12 potato samosas served with sweet tamarind chutney
 ---
