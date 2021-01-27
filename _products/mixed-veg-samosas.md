@@ -10,5 +10,6 @@ spiciness:
   - Mild
   - Spicy
   - Extra Spicy
-description: 12pcs served with sweet tamarind chutney. (Contains potato, carrots, & peas)
+description: 12 veggie samosas with potato, carrots, & peas served with sweet
+  tamarind chutney.
 ---
