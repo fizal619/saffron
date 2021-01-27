@@ -11,5 +11,5 @@ spiciness:
   - Spicy
   - Extra Spicy
 name: Chicken Samosas
-description: 12pcs served with sweet tamarind chutney. (Plain chicken)
+description: 12 chicken samosas served with sweet tamarind chutney.
 ---
