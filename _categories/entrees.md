@@ -1,6 +1,6 @@
 ---
 title: Entrees
-hidden: false
+hidden: true
 products:
   - Butter Chicken - 5 Servings
 ---
