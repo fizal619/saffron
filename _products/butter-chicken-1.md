@@ -5,5 +5,5 @@ image: /images/upload/butter-chicken.jpg
 options:
   - Garlic Chapati
   - Garlic Basmati Rice
-description: Only available on Saturday 5th December, 2020
+description: Only available on Saturday 6th January 2021
 ---
