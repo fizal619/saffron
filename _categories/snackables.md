@@ -9,4 +9,5 @@ products:
   - Tandoori Paneer Nuggets
   - Veggie Samosas
   - Mixed Veg Samosas
+  - Prawn Samosa
 ---
