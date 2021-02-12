@@ -1,5 +1,5 @@
 ---
-title: Chicken Biryani
+title: Chicken Biryani - 1 Serving
 price: "2000"
 image: /images/upload/chicken-biryani.png
 options: []
