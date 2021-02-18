@@ -1,6 +1,6 @@
 ---
 title: Entree Specials
-hidden: false
+hidden: true
 products:
   - Chicken Biryani - 1 Serving
 ---
