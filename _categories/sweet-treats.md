@@ -7,4 +7,6 @@ products:
   - Gulab Jamun
   - Kulfi
   - Rasmalai
+  - Holi Sweet & Savory Treats
+  - Holi Sweet Treats
 ---
