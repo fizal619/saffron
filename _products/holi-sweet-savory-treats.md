@@ -1,5 +1,5 @@
 ---
-title: Holi Sweet & Savory Treats
+title: Holi Sweet & Savory Treat Box
 price: "2000"
 image: /images/upload/diwali-or-holi-1-.png
 options: []
