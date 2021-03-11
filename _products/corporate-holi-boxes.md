@@ -1,5 +1,5 @@
 ---
-title: Corporate Holi Boxes
+title: Holi Coporate Sampler Box
 price: "500"
 image: /images/upload/website-template.png
 options: []
