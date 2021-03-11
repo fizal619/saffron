@@ -7,6 +7,7 @@ products:
   - Gulab Jamun
   - Kulfi
   - Rasmalai
-  - Holi Sweet & Savory Treats
-  - Holi Sweet Treats
+  - Holi Coporate Sampler Box
+  - Holi Sweet & Savory Treat Box
+  - Holi Sweet Treat Box
 ---
