@@ -1,6 +1,6 @@
 ---
 title: ~ Holi Specials ~
-hidden: true
+hidden: false
 products:
   - Besan Ladoo
   - Burfi
