@@ -1,5 +1,5 @@
 ---
-title: ~ Holi Specials ~
+title: Holi Specials
 hidden: false
 products:
   - Besan Ladoo
