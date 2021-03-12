@@ -1,5 +1,5 @@
 ---
-title: Appetizers
+title: Snackables
 hidden: false
 products:
   - "Besan Pakora "
