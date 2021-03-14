@@ -101,8 +101,8 @@ title: order
   </div>
 
   <br>
-
-  {%- for category in site.categories -%}
+  {% assign ordered_categories = site.categories | sort: "order" %}
+  {%- for category in ordered_categories -%}
     {% if category.hidden == false %}
 
     <h2>{{ category.title }}</h2>

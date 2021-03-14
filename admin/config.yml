@@ -62,6 +62,12 @@ collections:
         name: "hidden"
         widget: "boolean"
         default: false
+      - label: "Order on Menu Page"
+        name: "order"
+        widget: "number"
+        default: 2
+        min: 1
+        value_type: "int"
       - label: Products
         name: products
         widget: relation

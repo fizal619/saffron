@@ -1,6 +1,7 @@
 ---
 title: Sweet Treats
 hidden: false
+order: 3
 products:
   - Besan Ladoo
   - Burfi
