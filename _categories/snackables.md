@@ -1,7 +1,7 @@
 ---
 title: Appetizers
 hidden: false
-order: 1
+order: 2
 products:
   - "Besan Pakora "
   - Chicken Samosas
