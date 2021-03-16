@@ -1,7 +1,7 @@
 ---
 title: Entrees
 hidden: false
-order: 2
+order: 3
 products:
   - Butter Chicken - 5 Servings
   - Chicken Biryani - 5 Servings
