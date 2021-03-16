@@ -1,7 +1,7 @@
 ---
 title: Sweet Treats
 hidden: false
-order: 3
+order: 4
 products:
   - Besan Ladoo
   - Burfi
@@ -9,8 +9,5 @@ products:
   - Rasmalai
   - Peera
   - Mithai
-  - Holi Coporate Sampler Box
-  - Holi Sweet & Savory Treat Box
-  - Holi Sweet Treat Box
   - Gulab Jamun
 ---
