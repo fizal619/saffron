@@ -1,5 +1,5 @@
 ---
-title: Prawn Samosa
+title: Prawn Samosas
 price: "2500"
 image: /images/upload/prawn-samosa.png
 options:
