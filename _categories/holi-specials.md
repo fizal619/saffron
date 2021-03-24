@@ -1,9 +1,9 @@
 ---
-title: Holi Specials
+title: Holi Specials - Only available on Sunday 28th.
 hidden: false
 order: 1
 products:
-  - Holi Coporate Sampler Box
   - Holi Sweet & Savory Treat Box
   - Holi Sweet Treat Box
+  - Holi Coporate Box
 ---
