@@ -1,5 +1,5 @@
 ---
-title: Appetizers - Mixed veg and Air fried Samosas unavailable until March 30th.
+title: Appetizers - Air fried Samosas unavailable until March 30th.
 hidden: false
 order: 2
 products:
