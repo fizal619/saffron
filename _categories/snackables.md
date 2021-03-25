@@ -1,5 +1,5 @@
 ---
-title: Appetizers
+title: Appetizers - Mixed veg and Air fried Samosas unavailable until March 30th.
 hidden: false
 order: 2
 products:
@@ -9,5 +9,4 @@ products:
   - Chicken & Veg Samosas
   - Chicken Samosas
   - Prawn Samosas
-  - Mixed Veg Samosas
 ---
