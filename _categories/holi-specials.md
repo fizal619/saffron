@@ -1,5 +1,5 @@
 ---
-title: Holi Specials - Only available on Sunday 28th.
+title: "Holi Specials - Limited quantities available March 27th & 28th. "
 hidden: false
 order: 1
 products:
