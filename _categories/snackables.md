@@ -1,5 +1,5 @@
 ---
-title: Appetizers - Air fried Samosas unavailable until March 30th.
+title: Appetizers - ALL ORDERS CLOSED until March 30th.
 hidden: false
 order: 2
 products:
