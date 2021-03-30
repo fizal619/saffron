@@ -3,12 +3,12 @@ title: Appetizers
 hidden: false
 order: 2
 products:
-  - "Besan Pakora "
-  - Tandoori Paneer Nuggets
   - Veggie Samosas
-  - Chicken & Veg Samosas
+  - Mixed Veg Samosas
   - Chicken Samosas
   - Prawn Samosas
-  - Mixed Veg Samosas
+  - Chicken & Veg Samosas
+  - "Besan Pakora "
+  - Tandoori Paneer Nuggets
   - Tandoori Chicken Nuggets
 ---
