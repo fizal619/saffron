@@ -10,4 +10,5 @@ products:
   - Chicken Samosas
   - Prawn Samosas
   - Mixed Veg Samosas
+  - Tandoori Chicken Nuggets
 ---
