@@ -1,5 +1,5 @@
 ---
-title: Appetizers - ALL ORDERS CLOSED until March 30th.
+title: Appetizers
 hidden: false
 order: 2
 products:
@@ -9,4 +9,5 @@ products:
   - Chicken & Veg Samosas
   - Chicken Samosas
   - Prawn Samosas
+  - Mixed Veg Samosas
 ---
