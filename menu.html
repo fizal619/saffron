@@ -146,6 +146,366 @@
     <br>
     <div class="row">
         <div class="col-xs-12 col-md-6">
+          <div id="snackables-veggie-samosas-card" class="product-card">
+            <span class="price">$1500</span>
+            <img src="/assets/f25eee-e01522cd136c5b5a1e2adbd20dd3dc0c8d2a7ea664f90a3102d0a2ed99b3c8e7.png">
+            <p class="title">Veggie Samosas</p>
+            <p class="desc">12 potato samosas served with sweet tamarind chutney</p><script>
+  document.querySelector("#snackables-veggie-samosas-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="veggie-samosas-modal" class="product-modal-container">
+          <img src="/assets/d1285a-75284fefd948f30622294c51ed37a837ae810822196ba2c438f9832349757428.png">
+          <span class="modal-title"> Veggie Samosas - $1500</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">12 potato samosas served with sweet tamarind chutney</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Deep-fried" name="option" value="Deep-fried">
+                  <label class="label" for="Deep-fried"> Deep-fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Air-fried" name="option" value="Air-fried">
+                  <label class="label" for="Air-fried"> Air-fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Frozen" name="option" value="Frozen">
+                  <label class="label" for="Frozen"> Frozen </label>
+                </div>
+                <br>
+              <div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Veggie Samosas">
+              <input type="hidden" name="price" value="1500">
+            </form>
+            <center>
+              <button id="veggie-samosas-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#veggie-samosas-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="snackables-mixed-veg-samosas-card" class="product-card">
+            <span class="price">$2000</span>
+            <img src="/assets/1f5beb-e0d173391587fcca83bde674bd88ab847ea5a70eb11c5dddf8787b582283180a.png">
+            <p class="title">Mixed Veg Samosas</p>
+            <p class="desc">12 veggie samosas with potato, carrots, & peas served with sweet tamarind chutney.</p><script>
+  document.querySelector("#snackables-mixed-veg-samosas-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="mixed-veg-samosas-modal" class="product-modal-container">
+          <img src="/assets/7767a4-728e1941013beba8cb0cee15cdc1c4845a5d95d19b8eb7edb8c4cddd22e70956.png">
+          <span class="modal-title"> Mixed Veg Samosas - $2000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">12 veggie samosas with potato, carrots, & peas served with sweet tamarind chutney.</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Deep-fried" name="option" value="Deep-fried">
+                  <label class="label" for="Deep-fried"> Deep-fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Air-fried" name="option" value="Air-fried">
+                  <label class="label" for="Air-fried"> Air-fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Frozen" name="option" value="Frozen">
+                  <label class="label" for="Frozen"> Frozen </label>
+                </div>
+                <br>
+              <div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Mixed Veg Samosas">
+              <input type="hidden" name="price" value="2000">
+            </form>
+            <center>
+              <button id="mixed-veg-samosas-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#mixed-veg-samosas-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="snackables-chicken-samosas-card" class="product-card">
+            <span class="price">$2500</span>
+            <img src="/assets/040177-4757a827f8f10842203d17ca830add564c941022a0c5ccd8a750ea98ea57f531.png">
+            <p class="title">Chicken Samosas</p>
+            <p class="desc">12 chicken samosas served with sweet tamarind chutney.</p><script>
+  document.querySelector("#snackables-chicken-samosas-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="chicken-samosas-modal" class="product-modal-container">
+          <img src="/assets/9cc49a-fc4292bafcb80172ef96c37790e61c9f686593b5294f866656dd1219e5d5f8cf.png">
+          <span class="modal-title"> Chicken Samosas - $2500</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">12 chicken samosas served with sweet tamarind chutney.</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Deep-fried" name="option" value="Deep-fried">
+                  <label class="label" for="Deep-fried"> Deep-fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Air-fried" name="option" value="Air-fried">
+                  <label class="label" for="Air-fried"> Air-fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Frozen" name="option" value="Frozen">
+                  <label class="label" for="Frozen"> Frozen </label>
+                </div>
+                <br>
+              <div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Chicken Samosas">
+              <input type="hidden" name="price" value="2500">
+            </form>
+            <center>
+              <button id="chicken-samosas-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#chicken-samosas-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="snackables-prawn-samosa-card" class="product-card">
+            <span class="price">$2500</span>
+            <img src="/assets/05152e-8678882e3697f2ffd636d5b864e9793e72ebd5b11f39b8af41a9a237ee1bd230.png">
+            <p class="title">Prawn Samosas</p>
+            <p class="desc">12 prawn samosas served with sweet tamarind chutney.</p><script>
+  document.querySelector("#snackables-prawn-samosa-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="prawn-samosa-modal" class="product-modal-container">
+          <img src="/assets/3a105b-bc10493dba9cf5f6df0b3e16874d333f2da84e6a004451294ba942e0889abad5.png">
+          <span class="modal-title"> Prawn Samosas - $2500</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">12 prawn samosas served with sweet tamarind chutney.</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="DeepFried" name="option" value="Deep Fried">
+                  <label class="label" for="DeepFried"> Deep Fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="AirFried" name="option" value="Air Fried">
+                  <label class="label" for="AirFried"> Air Fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Frozen" name="option" value="Frozen">
+                  <label class="label" for="Frozen"> Frozen </label>
+                </div>
+                <br>
+              <div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Prawn Samosas">
+              <input type="hidden" name="price" value="2500">
+            </form>
+            <center>
+              <button id="prawn-samosa-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#prawn-samosa-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="snackables-chicken-and-veg-samosas-card" class="product-card">
+            <span class="price">$3000</span>
+            <img src="/assets/9b3213-214fed4ad92b12182baf148404ee850070f3155b33d9bc6db5bb5bcf94b4d752.png">
+            <p class="title">Chicken & Veg Samosas</p>
+            <p class="desc">12 chicken samosas with carrots & peas served with sweet tamarind chutney.</p><script>
+  document.querySelector("#snackables-chicken-and-veg-samosas-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="chicken-and-veg-samosas-modal" class="product-modal-container">
+          <img src="/assets/b09875-32bf2c182c9de7f9640cbe7fb04de73654ee38a220dd99c92e64f87dda0816ff.png">
+          <span class="modal-title"> Chicken & Veg Samosas - $3000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">12 chicken samosas with carrots & peas served with sweet tamarind chutney.</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Deep-fried" name="option" value="Deep-fried">
+                  <label class="label" for="Deep-fried"> Deep-fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Air-fried" name="option" value="Air-fried">
+                  <label class="label" for="Air-fried"> Air-fried </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Frozen" name="option" value="Frozen">
+                  <label class="label" for="Frozen"> Frozen </label>
+                </div>
+                <br>
+              <div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Chicken & Veg Samosas">
+              <input type="hidden" name="price" value="3000">
+            </form>
+            <center>
+              <button id="chicken-and-veg-samosas-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#chicken-and-veg-samosas-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
           <div id="snackables-besan-pakora-18-card" class="product-card">
             <span class="price">$5000</span>
             <img src="/assets/1c0b90-8041eda99be22c13579179444e1b079747865c6c5b40d20ab211ca3192f22e5b.jpg">
@@ -223,14 +583,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="snackables-tandoori-paneer-nuggets-card" class="product-card">
             <span class="price">$6000</span>
-            <img src="/assets/61d060-5210a946f4ad4d94ba55d4f4c9702d4c825c10428656f812a79c6103a50ecd53.png">
+            <img src="/assets/61d060-60503499e6936d3c3e436c903956feb102b62eefe2fc410d7cc177779749b548.png">
             <p class="title">Tandoori Paneer Nuggets</p>
             <p class="desc">20pcs served with raita. (gluten-free, contains dairy) *12hr lead time*</p><script>
   document.querySelector("#snackables-tandoori-paneer-nuggets-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="tandoori-paneer-nuggets-modal" class="product-modal-container">
-          <img src="/assets/88f2ce-97c2dbe5ffcaa0aab8a1c999b707a47902433e5fad3df03a68e4aa542df2b9a3.png">
+          <img src="/assets/88f2ce-e86c126ebf5461c24af8bb0657e4c6f36206fa3e6353856412314c877ec96af6.png">
           <span class="modal-title"> Tandoori Paneer Nuggets - $6000</span>
           <br>
           <div class="product-modal-content">
@@ -282,376 +642,16 @@
 </div>
         </div>
         <div class="col-xs-12 col-md-6">
-          <div id="snackables-veggie-samosas-card" class="product-card">
-            <span class="price">$1500</span>
-            <img src="/assets/f25eee-83f59fa8d7a02e56fe29c4b3a9cb0dac8ece1f1a12d839d3d924e924ba5ee538.png">
-            <p class="title">Veggie Samosas</p>
-            <p class="desc">12 potato samosas served with sweet tamarind chutney</p><script>
-  document.querySelector("#snackables-veggie-samosas-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="veggie-samosas-modal" class="product-modal-container">
-          <img src="/assets/d1285a-eb3f311704adab0e3baebd5f4f877a1fcdd22426787ede0c0881f7627d151973.png">
-          <span class="modal-title"> Veggie Samosas - $1500</span>
-          <br>
-          <div class="product-modal-content">
-            
-              <p class="product-desc">12 potato samosas served with sweet tamarind chutney</p>
-            
-            <form id="-form"><div class="options-group" >
-                  <input required type="radio" id="Deep-fried" name="option" value="Deep-fried">
-                  <label class="label" for="Deep-fried"> Deep-fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Air-fried" name="option" value="Air-fried">
-                  <label class="label" for="Air-fried"> Air-fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Frozen" name="option" value="Frozen">
-                  <label class="label" for="Frozen"> Frozen </label>
-                </div>
-                <br>
-              <div class="options-group" >
-                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
-                  <label class="label" for="Mild"> Mild </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
-                  <label class="label" for="Spicy"> Spicy </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
-                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
-                </div>
-                <br>
-              
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Veggie Samosas">
-              <input type="hidden" name="price" value="1500">
-            </form>
-            <center>
-              <button id="veggie-samosas-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#veggie-samosas-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div id="snackables-chicken-and-veg-samosas-card" class="product-card">
-            <span class="price">$3000</span>
-            <img src="/assets/9b3213-869dcc10986eac95db3ec51bdcc76edee00c15483b0f9ca66a18c47434a38898.png">
-            <p class="title">Chicken & Veg Samosas</p>
-            <p class="desc">12 chicken samosas with carrots & peas served with sweet tamarind chutney.</p><script>
-  document.querySelector("#snackables-chicken-and-veg-samosas-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="chicken-and-veg-samosas-modal" class="product-modal-container">
-          <img src="/assets/b09875-ec0952b5771feb612b87929f71e5d748307e1c411ac3e9776f515ffaa63aa1c0.png">
-          <span class="modal-title"> Chicken & Veg Samosas - $3000</span>
-          <br>
-          <div class="product-modal-content">
-            
-              <p class="product-desc">12 chicken samosas with carrots & peas served with sweet tamarind chutney.</p>
-            
-            <form id="-form"><div class="options-group" >
-                  <input required type="radio" id="Deep-fried" name="option" value="Deep-fried">
-                  <label class="label" for="Deep-fried"> Deep-fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Air-fried" name="option" value="Air-fried">
-                  <label class="label" for="Air-fried"> Air-fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Frozen" name="option" value="Frozen">
-                  <label class="label" for="Frozen"> Frozen </label>
-                </div>
-                <br>
-              <div class="options-group" >
-                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
-                  <label class="label" for="Mild"> Mild </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
-                  <label class="label" for="Spicy"> Spicy </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
-                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
-                </div>
-                <br>
-              
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Chicken & Veg Samosas">
-              <input type="hidden" name="price" value="3000">
-            </form>
-            <center>
-              <button id="chicken-and-veg-samosas-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#chicken-and-veg-samosas-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div id="snackables-chicken-samosas-card" class="product-card">
-            <span class="price">$2500</span>
-            <img src="/assets/040177-a8abd3418912834cbebbae5887985fd1e1685396c7501588102f8d13b6165ca3.png">
-            <p class="title">Chicken Samosas</p>
-            <p class="desc">12 chicken samosas served with sweet tamarind chutney.</p><script>
-  document.querySelector("#snackables-chicken-samosas-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="chicken-samosas-modal" class="product-modal-container">
-          <img src="/assets/9cc49a-23badc151bfce5904368eea1e6a17e79a6f6d28c081f53838e0c237cd473ff86.png">
-          <span class="modal-title"> Chicken Samosas - $2500</span>
-          <br>
-          <div class="product-modal-content">
-            
-              <p class="product-desc">12 chicken samosas served with sweet tamarind chutney.</p>
-            
-            <form id="-form"><div class="options-group" >
-                  <input required type="radio" id="Deep-fried" name="option" value="Deep-fried">
-                  <label class="label" for="Deep-fried"> Deep-fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Air-fried" name="option" value="Air-fried">
-                  <label class="label" for="Air-fried"> Air-fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Frozen" name="option" value="Frozen">
-                  <label class="label" for="Frozen"> Frozen </label>
-                </div>
-                <br>
-              <div class="options-group" >
-                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
-                  <label class="label" for="Mild"> Mild </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
-                  <label class="label" for="Spicy"> Spicy </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
-                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
-                </div>
-                <br>
-              
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Chicken Samosas">
-              <input type="hidden" name="price" value="2500">
-            </form>
-            <center>
-              <button id="chicken-samosas-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#chicken-samosas-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div id="snackables-prawn-samosa-card" class="product-card">
-            <span class="price">$2500</span>
-            <img src="/assets/05152e-73b21dab9a40880aa776e5e65ec9ad000e5f4381656a68cec0abaafc150d7d1e.png">
-            <p class="title">Prawn Samosas</p>
-            <p class="desc">12 prawn samosas served with sweet tamarind chutney.</p><script>
-  document.querySelector("#snackables-prawn-samosa-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="prawn-samosa-modal" class="product-modal-container">
-          <img src="/assets/3a105b-0de735536820dd612efbf285992ce1ace37d74facb0f87ce491dabc8e3f00d63.png">
-          <span class="modal-title"> Prawn Samosas - $2500</span>
-          <br>
-          <div class="product-modal-content">
-            
-              <p class="product-desc">12 prawn samosas served with sweet tamarind chutney.</p>
-            
-            <form id="-form"><div class="options-group" >
-                  <input required type="radio" id="DeepFried" name="option" value="Deep Fried">
-                  <label class="label" for="DeepFried"> Deep Fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="AirFried" name="option" value="Air Fried">
-                  <label class="label" for="AirFried"> Air Fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Frozen" name="option" value="Frozen">
-                  <label class="label" for="Frozen"> Frozen </label>
-                </div>
-                <br>
-              <div class="options-group" >
-                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
-                  <label class="label" for="Mild"> Mild </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
-                  <label class="label" for="Spicy"> Spicy </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
-                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
-                </div>
-                <br>
-              
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Prawn Samosas">
-              <input type="hidden" name="price" value="2500">
-            </form>
-            <center>
-              <button id="prawn-samosa-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#prawn-samosa-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div id="snackables-mixed-veg-samosas-card" class="product-card">
-            <span class="price">$2000</span>
-            <img src="/assets/1f5beb-6bd044716617be2ec3f6f9980820f4e5d6739f503d9f7e97be09cc138f0e8639.png">
-            <p class="title">Mixed Veg Samosas</p>
-            <p class="desc">12 veggie samosas with potato, carrots, & peas served with sweet tamarind chutney.</p><script>
-  document.querySelector("#snackables-mixed-veg-samosas-card")
-    .addEventListener("click", function(){
-      const instance = basicLightbox.create(`
-        <div id="mixed-veg-samosas-modal" class="product-modal-container">
-          <img src="/assets/7767a4-237d888bc3273d7013d9a76fa7dbc416f7940452b1e0bfbb58f2bafc94f06711.png">
-          <span class="modal-title"> Mixed Veg Samosas - $2000</span>
-          <br>
-          <div class="product-modal-content">
-            
-              <p class="product-desc">12 veggie samosas with potato, carrots, & peas served with sweet tamarind chutney.</p>
-            
-            <form id="-form"><div class="options-group" >
-                  <input required type="radio" id="Deep-fried" name="option" value="Deep-fried">
-                  <label class="label" for="Deep-fried"> Deep-fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Air-fried" name="option" value="Air-fried">
-                  <label class="label" for="Air-fried"> Air-fried </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Frozen" name="option" value="Frozen">
-                  <label class="label" for="Frozen"> Frozen </label>
-                </div>
-                <br>
-              <div class="options-group" >
-                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
-                  <label class="label" for="Mild"> Mild </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
-                  <label class="label" for="Spicy"> Spicy </label>
-                </div><div class="options-group" >
-                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
-                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
-                </div>
-                <br>
-              
-              <label for="qty">Quantity:</label>
-              <input required value="1" min="1" type="number" name="qty" class="qty" />
-              <br>
-              <label for="instructions">Special Instructions:</label> <br>
-              <textarea name="instructions"></textarea>
-              <center>
-                <button class="btn btn-outline-primary">
-                  Add to Bag
-                </button>
-              </center>
-              <input type="hidden" name="name" value="Mixed Veg Samosas">
-              <input type="hidden" name="price" value="2000">
-            </form>
-            <center>
-              <button id="mixed-veg-samosas-close" class="btn btn-outline-primary closeBtn">
-                Close
-              </button>
-            </center>
-          </div>
-        </div>
-      `);
-      instance.show();
-      instance.element()
-        .querySelector("form")
-        .addEventListener("submit", addToBagHandler);
-      instance.element()
-        .querySelector("#mixed-veg-samosas-close")
-        .addEventListener("click", instance.close);
-    });
-</script>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-6">
           <div id="snackables-tandoori-chicken-nuggets-card" class="product-card">
             <span class="price">$6000</span>
-            <img src="/assets/be8c6b-40d651fa727082517477eb9b38c682857bfae963b9a03b8132a3e501336cdc62.png">
+            <img src="/assets/be8c6b-d1e719a4a10d1eb1fff5e9f847f70141e69ace44019c823b7c2de94dd242d11d.png">
             <p class="title">Tandoori Chicken Nuggets</p>
             <p class="desc">20pcs served with raita. (gluten-free, optional dairy) *12hr lead time*</p><script>
   document.querySelector("#snackables-tandoori-chicken-nuggets-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="tandoori-chicken-nuggets-modal" class="product-modal-container">
-          <img src="/assets/c57352-b2e4d61484c3d9bfef18cba7b4130ce8190c9cb1521694a639431dd579655291.png">
+          <img src="/assets/c57352-1a716e5a0717ca8e12cf94fa193902357fc7174a594cb8c35363056c52d6b9cf.png">
           <span class="modal-title"> Tandoori Chicken Nuggets - $6000</span>
           <br>
           <div class="product-modal-content">
@@ -770,14 +770,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="entrees-chicken-biryani-5-servings-card" class="product-card">
             <span class="price">$10000</span>
-            <img src="/assets/86f973-876a2d9f07f22898bb0396630ee70c3f0034d7e4a058f37626eefe8e0eb57655.png">
+            <img src="/assets/86f973-66b2fd84fefab83c3e673d6d16ab3b7ab8107d51238a23a6899154e1dc4ced79.png">
             <p class="title">Chicken Biryani - 5 Servings</p>
             <p class="desc">Classic chicken biryani served with raita. </p><script>
   document.querySelector("#entrees-chicken-biryani-5-servings-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="chicken-biryani-5-servings-modal" class="product-modal-container">
-          <img src="/assets/26ae22-e3dc483db12165ca0d35527c310161efe68dc34a65e3824689c663e372a182ec.png">
+          <img src="/assets/26ae22-321c82d1ce60ec3023514ca5c343e17eac9e6b7761373730738f380d7f73347f.png">
           <span class="modal-title"> Chicken Biryani - 5 Servings - $10000</span>
           <br>
           <div class="product-modal-content">
@@ -827,14 +827,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-beshan-ladoo-card" class="product-card">
             <span class="price">$7200</span>
-            <img src="/assets/832705-07a7bafaa230dbba22df714deefea3590a030403c0568a08a6c8d9a6a0f37c0c.png">
+            <img src="/assets/832705-16e2e92babd31af445a5e5c0b81045cf19c1c511ade5d0b448ae948d4c4b20da.png">
             <p class="title">Besan Ladoo</p>
             <p class="desc">24pcs (gluten & dairy free)</p><script>
   document.querySelector("#sweet-treats-beshan-ladoo-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="beshan-ladoo-modal" class="product-modal-container">
-          <img src="/assets/16f831-2958e476f4aa88a24a1a67d0ebd3e0b2122dac9124a21522965ff04946abb391.png">
+          <img src="/assets/16f831-82efb7194872efdc4d60b0e286b64a15b0f306c1c2f0bc6c5c7e17a90d2c84fd.png">
           <span class="modal-title"> Besan Ladoo - $7200</span>
           <br>
           <div class="product-modal-content">
@@ -877,14 +877,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-burfi-card" class="product-card">
             <span class="price">$3000</span>
-            <img src="/assets/19964e-a5a29fd0378d2897b766aa556ba5216cac8dd0cc0843456e5970e6e6e0eccc37.png">
+            <img src="/assets/19964e-7ff6045dec72b7abb1b7b9df811254ddc67c94daa786adc841e239ebfe8379c0.png">
             <p class="title">Burfi</p>
             <p class="desc">15pcs (gluten-free, contains dairy)</p><script>
   document.querySelector("#sweet-treats-burfi-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="burfi-modal" class="product-modal-container">
-          <img src="/assets/6511ed-9c02d1be0c57536f4b683a5bbe4bf964e11f8c60ed59034003788501ff6d7caf.png">
+          <img src="/assets/6511ed-e63739d680a069ce2c656ff5fe5a4a9ce482fb958acfaf98dc04e04d737accff.png">
           <span class="modal-title"> Burfi - $3000</span>
           <br>
           <div class="product-modal-content">
@@ -927,14 +927,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-kulfi-card" class="product-card">
             <span class="price">$5000</span>
-            <img src="/assets/7d53e8-589a46457da036ef06e41cb779335846cf1bc151b3ebf5fa64ff5e12bbc1605b.png">
+            <img src="/assets/7d53e8-7077f3e913635c3557395e116a4cbcdc91b952d17fe89ecb095f2761914ae7a0.png">
             <p class="title">Kulfi</p>
             <p class="desc">Indian ice-cream (Gluten-free, contains dairy, nuts are optional)</p><script>
   document.querySelector("#sweet-treats-kulfi-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="kulfi-modal" class="product-modal-container">
-          <img src="/assets/d4400d-73241da2146ce9a52f6b7d49b23ca55648fed228423adf6847d4ec55df9b4ccb.png">
+          <img src="/assets/d4400d-b760ff5fb9f1adeb1bd4087b3dff7c1fa2aa103751d169220598e00e0df2c280.png">
           <span class="modal-title"> Kulfi - $5000</span>
           <br>
           <div class="product-modal-content">
@@ -994,14 +994,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-rasmalai-card" class="product-card">
             <span class="price">$10000</span>
-            <img src="/assets/0ce1af-f79c4180b4a214de9ff4991a3019ba163d6e81b992bbb4660d7d460a2357c256.png">
+            <img src="/assets/0ce1af-b722097aae54ed8ed94995a838cd7cb29842f47c624943f3bd4d3784622bb3e9.png">
             <p class="title">Rasmalai</p>
             <p class="desc">24pcs (gluten-free, contains milks & nuts)</p><script>
   document.querySelector("#sweet-treats-rasmalai-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="rasmalai-modal" class="product-modal-container">
-          <img src="/assets/374044-bec2f0792b445ea70aa7d65806ba63cf095416c119070075ce78e4e9338299d2.png">
+          <img src="/assets/374044-fa4c071a076e85e50dfa4453ad0e3f106afc86749f53abcf8a4d1a46bd2c9925.png">
           <span class="modal-title"> Rasmalai - $10000</span>
           <br>
           <div class="product-modal-content">
@@ -1044,14 +1044,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-peera-card" class="product-card">
             <span class="price">$2400</span>
-            <img src="/assets/4b2eb5-4b15b2d9f1a29380290b8c743331c0d62925c1676a9f17772c1a47d298151a28.png">
+            <img src="/assets/4b2eb5-c8e13816659039cb29889a21356a668b189d3edb7b60239555d5dbfca1548b90.png">
             <p class="title">Peera</p>
             <p class="desc">12 pieces (contains dairy)</p><script>
   document.querySelector("#sweet-treats-peera-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="peera-modal" class="product-modal-container">
-          <img src="/assets/742a32-248ea4e4a7f8d698a3f407982f15c89e99933f1a71b4404095280de45fb7dae1.png">
+          <img src="/assets/742a32-33d6b032633f7a2b9f1eff40f3cba1f7c0f33776ddd2c5d578aae6e56cfaddc3.png">
           <span class="modal-title"> Peera - $2400</span>
           <br>
           <div class="product-modal-content">
@@ -1094,14 +1094,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-mithai-card" class="product-card">
             <span class="price">$1000</span>
-            <img src="/assets/3b9845-579e598773adc2fe12b6be2244b56f9f433cbaea406a3f6c8ac429af40952c6a.png">
+            <img src="/assets/3b9845-129fa480224bb9bb360369cd22ffabaad98f892d8d9f3790fe14b2c3e805b5f5.png">
             <p class="title">Mithai</p>
             <p class="desc">12 pieces (contains wheat and dairy)</p><script>
   document.querySelector("#sweet-treats-mithai-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="mithai-modal" class="product-modal-container">
-          <img src="/assets/1ef7a1-c699f8bf81f665a7b181664e82ab973cdd35ccba40328d3e1827868c178aad03.png">
+          <img src="/assets/1ef7a1-9402f359511a8f097c60a28304a3a564648af8956f060bd658fce00606e11cab.png">
           <span class="modal-title"> Mithai - $1000</span>
           <br>
           <div class="product-modal-content">
@@ -1144,14 +1144,14 @@
         <div class="col-xs-12 col-md-6">
           <div id="sweet-treats-gulab-jamun-card" class="product-card">
             <span class="price">$1200</span>
-            <img src="/assets/943075-cddcb75d606616f4f57b6782480614b70d15fa6b6e86ad4eca3c650c29f63f8b.png">
+            <img src="/assets/943075-7e1c024f7123ac443842c544f7c355cb3156793e994cb2d02bf316e7b3c30111.png">
             <p class="title">Gulab Jamun</p>
             <p class="desc">12pcs (gluten-free, contains dairy)</p><script>
   document.querySelector("#sweet-treats-gulab-jamun-card")
     .addEventListener("click", function(){
       const instance = basicLightbox.create(`
         <div id="gulab-jamun-modal" class="product-modal-container">
-          <img src="/assets/5bc017-6cd5f1a31050412acf93f6b916d34cf75735c922d74cf20b72755370552a4cce.png">
+          <img src="/assets/5bc017-1c107d65abd092bbb40d68a359dd8dc7e3c7940afe18c5e528e431e07a5cd25d.png">
           <span class="modal-title"> Gulab Jamun - $1200</span>
           <br>
           <div class="product-modal-content">
