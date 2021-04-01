@@ -256,3 +256,4 @@ if (document.querySelector('.my-slider')) {
     }
   });
 }
+;
