@@ -421,3 +421,8 @@ input[type=radio].radiogroup {
 .deliveryoptionlabel:hover, input[type=radio].radiogroup:hover {
   cursor: pointer;
 }
+
+#modal-img {
+  width: 100px;
+  height: 100px;
+}

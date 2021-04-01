@@ -45,7 +45,7 @@ module.exports = (event, orderNo) => {
       <p><b>Total:</b> $${commas(runningTotal)}</p>
       <p><b>Pickup/Delivery Date:</b> ${date}</p>
       <hr/>
-      <p>A representative will call you shortly to confirm your order and pickup or delivery options.</p>
+      <p>Your order has been received and confirmed. A representative will be in touch soon for pickup/delivery arrangements.</p>
       <p>Please note, this message was sent from a unmonitored mailbox.</p>
       <p>Please do not reply to this email. Contact supriya@saffroncateringgy.com if you have any questions, changes or concerns</p>
     `);

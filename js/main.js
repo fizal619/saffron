@@ -9,6 +9,25 @@ const ordersContainer = document.querySelector(".order-container");
 const orderForm = document.querySelector("#order-form");
 const orderDate = document.querySelector("#date-input");
 const checkoutButton = document.querySelector("#order-form button");
+const confirmInstance = basicLightbox.create(`
+  <div class="product-modal-container">
+    <br><br>
+    <center><img id="modal-img" src="/images/bag.png" alt="bag icon"/></center>
+    <span class="modal-title"><center>Order Received</center></span>
+    <br>
+    <div class="product-modal-content">
+      <center><p>Thank you!<br>Please check your email for confirmation.</p></center>
+      <center>
+        <button id="confirm-close" class="btn btn-outline-primary closeBtn">
+          Got it!
+        </button>
+      </center>
+    </div>
+  </div>
+`);
+confirmInstance.element()
+  .querySelector("#confirm-close")
+  .addEventListener("click", confirmInstance.close);
 
 let bag = {}
 let runningTotalTop = 0;
@@ -183,12 +202,13 @@ function checkout(e) {
       orderDateRefresh();
       bagContainer.style.display = "none";
       ordersContainer.classList.remove("bag-open");
-      Toastify({
-        text: "Order Sent. We'll Be in touch! 📧",
-        duration: 2000,
-        stopOnFocus: false,
-        backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
-      }).showToast();
+      // Toastify({
+      //   text: "Order Sent. We'll Be in touch! 📧",
+      //   duration: 2000,
+      //   stopOnFocus: false,
+      //   backgroundColor: "linear-gradient(to right, #b095db, #9A7DCA)"
+      // }).showToast();
+      confirmInstance.show();
     })
     .catch(function(e) {
       console.log(e)
