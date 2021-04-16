@@ -14,4 +14,5 @@ products:
   - Sirnee (lrg)
   - Vermicelli (med)
   - Vermicelli (lrg)
+  - Kheer (sml)
 ---
