@@ -10,4 +10,8 @@ products:
   - Kulfi
   - Besan Ladoo
   - Rasmalai
+  - Sirnee (med)
+  - Sirnee (lrg)
+  - Vermicelli (med)
+  - Vermicelli (lrg)
 ---
