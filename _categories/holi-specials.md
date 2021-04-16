@@ -1,9 +1,8 @@
 ---
-title: Specials
-hidden: true
+title: Eid Specials
+hidden: false
 order: 1
 products:
-  - Holi Sweet & Savory Treat Box
-  - Holi Coporate Box
-  - Holi Sweet Treat Box
+  - Eid Sweets (sml)
+  - Eid Sweets (med)
 ---
