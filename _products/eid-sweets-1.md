@@ -1,5 +1,5 @@
 ---
-title: "Eid Sweets #1"
+title: Eid Sweets (med)
 price: "1000"
 image: /images/upload/pxl_20210326_161739099-01.jpeg
 options: []
