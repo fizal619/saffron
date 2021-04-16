@@ -1,6 +1,6 @@
 ---
 title: Kheer (sml)
-price: "5000"
+price: "6000"
 image: /images/upload/kheer.jpg
 options: []
 spiciness: []
