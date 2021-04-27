@@ -1,7 +1,7 @@
 ---
 title: Sweet Treats
 hidden: false
-order: 4
+order: 5
 products:
   - Mithai
   - Gulab Jamun
