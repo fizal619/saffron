@@ -1,6 +1,6 @@
 ---
 title: Entree Specials
-hidden: true
+hidden: false
 order: 1
 products:
   - Butter Chicken - 1 Serving
