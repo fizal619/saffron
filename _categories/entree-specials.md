@@ -1,7 +1,7 @@
 ---
-title: Entree Specials
+title: Arrival Day Special
 hidden: true
-order: 2
+order: 1
 products:
   - Butter Chicken - 1 Serving
 ---
