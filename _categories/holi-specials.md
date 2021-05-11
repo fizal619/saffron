@@ -1,6 +1,6 @@
 ---
 title: Eid Specials
-hidden: false
+hidden: true
 order: 2
 products:
   - Eid Sweets (sml)
