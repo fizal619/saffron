@@ -1,6 +1,6 @@
 ---
 title: Chicken Biryani - 1 Serving
-price: "2000"
+price: "2500"
 image: /images/upload/chicken-biryani.png
 options: []
 spiciness: []
