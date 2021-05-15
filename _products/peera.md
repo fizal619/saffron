@@ -1,6 +1,6 @@
 ---
 title: Peera
-price: "2400"
+price: "2700"
 image: /images/upload/peera.png
 options: []
 spiciness: []
