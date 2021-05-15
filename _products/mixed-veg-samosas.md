@@ -1,6 +1,6 @@
 ---
 title: Mixed Veg Samosas
-price: 2,000
+price: 2,300
 image: /images/upload/mixed-veg-samosas.png
 options:
   - Deep-fried
