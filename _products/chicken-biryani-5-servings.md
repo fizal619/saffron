@@ -1,10 +1,13 @@
 ---
-title: Chicken Biryani - 5 Servings
-price: "12500"
+title: Biryani
+price: "12.500"
 image: /images/upload/chicken-biryani.png
-options: []
+options:
+  - Chicken
+  - Veggie
 spiciness:
   - Mild
   - Spicy
-description: "Classic chicken biryani served with raita. "
+  - Extra Spicy
+description: " (serves 5)"
 ---
