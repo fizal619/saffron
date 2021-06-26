@@ -4,10 +4,11 @@ price: 12,500
 image: /images/upload/butter-chicken.jpg
 options:
   - Steamed Rice
-  - Garlic Chapati
+  - Chapati
 spiciness:
   - Mild
   - Spicy
   - Extra Spicy
-description: " (serves 5) "
+description: Boneless chicken served in a mild, sweet, spicy, creamy, and
+  absolutely heavenly butter sauce. (serves 5)
 ---
