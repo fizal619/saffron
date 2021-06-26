@@ -9,4 +9,5 @@ spiciness:
   - Mild
   - Spicy
   - Extra Spicy
+description: (serves 5)
 ---
