@@ -1,6 +1,6 @@
 ---
 title: Matar Paneer
-price: 7,500
+price: 10,000
 image: /images/upload/matar-paneer.jpeg
 options:
   - Steamed Rice
