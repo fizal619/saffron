@@ -9,5 +9,5 @@ spiciness:
   - Mild
   - Spicy
   - Extra Spicy
-description: " (serves 5)"
+description: Exotic spiced rice and meat dish. (serves 5)
 ---
