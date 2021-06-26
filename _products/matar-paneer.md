@@ -9,5 +9,5 @@ spiciness:
   - Mild
   - Spicy
   - Extra Spicy
-description: (serves 5)
+description: Paneer and green peas served in a sweet, spicy, and creamy sauce. (serves 5)
 ---
