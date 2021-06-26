@@ -7,5 +7,5 @@ options:
   - Butter
   - Garlic
 spiciness: []
-description: " (5 large naan) "
+description: " Fluffy leavened Indian flat bread. (5 large naan) "
 ---
