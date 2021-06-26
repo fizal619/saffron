@@ -7,5 +7,5 @@ options:
   - Butter
   - Garlic
 spiciness: []
-description: Fluffy Indian bread, serves 5
+description: " (serves 5) "
 ---
