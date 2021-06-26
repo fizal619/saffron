@@ -1,6 +1,6 @@
 ---
 title: Biryani
-price: "12.500"
+price: 12,500
 image: /images/upload/chicken-biryani.png
 options:
   - Chicken
