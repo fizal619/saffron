@@ -7,5 +7,5 @@ options:
   - Butter
   - Garlic
 spiciness: []
-description: " (serves 5) "
+description: " (5 pieces) "
 ---
