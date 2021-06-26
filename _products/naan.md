@@ -7,5 +7,5 @@ options:
   - Butter
   - Garlic
 spiciness: []
-description: " (5 pieces) "
+description: " (5 large naan) "
 ---
