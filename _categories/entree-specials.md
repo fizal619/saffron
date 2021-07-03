@@ -1,6 +1,6 @@
 ---
 title: Entree Specials
-hidden: false
+hidden: true
 order: 1
 products:
   - Chicken Biryani
