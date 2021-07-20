@@ -1,7 +1,7 @@
 ---
 title: Mithai
-price: 1,300
+price: 1,500
 image: /images/upload/mithai.png
 options: []
-description: 12 pieces (contains wheat and dairy)
+description: 30 pieces / 1.5lb (contains wheat & dairy)
 ---
