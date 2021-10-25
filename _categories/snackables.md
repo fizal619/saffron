@@ -1,7 +1,7 @@
 ---
 title: Appetizers
 hidden: false
-order: 3
+order: 2
 products:
   - Veggie Samosas
   - Mixed Veg Samosas
