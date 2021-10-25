@@ -1,5 +1,5 @@
 ---
-title: Happy Diwali!
+title: Diwali Specials
 hidden: false
 order: 1
 products:
