@@ -1,7 +1,7 @@
 ---
 title: Diwali Coporate Box
 price: "500"
-image: /images/upload/website-template.png
+image: /images/upload/holi-or-diwali-2.jpeg
 options: []
 spiciness: []
 description: "Parsad, Mithai, Gulab Jamun, & Pholourie. (Min order: 10 boxes)
