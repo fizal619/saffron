@@ -102,8 +102,13 @@ title: order
 
   <br>
   {% assign ordered_categories = site.categories | sort: "order" %}
+  
+  {% assign closed_flag = true %}
+
   {%- for category in ordered_categories -%}
     {% if category.hidden == false %}
+
+    {% assign closed_flag = false %}
 
     <h2>{{ category.title }}</h2>
     <br>
@@ -129,7 +134,15 @@ title: order
 
   <div class="row">
     <div class="col-xs-12 col-md-6">
-
+      {% if closed_flag == false %}
+        <center>
+          <img src="/images/kitchen_closed.jpg" alt="kitcen closed" width="250px">
+          <br>
+          <p>
+            <b>OOPS! ALL ORDERS ARE CLOSED UNTIL NOVEMBER 6TH</b>
+          </p>
+        </center>
+      {% endif %}
     </div>
   </div>
 
