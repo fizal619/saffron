@@ -1,6 +1,6 @@
 ---
 title: Diwali Specials
-hidden: false
+hidden: true
 order: 1
 products:
   - Diwali Coporate Box
