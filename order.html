@@ -45,6 +45,14 @@ title: order
               name="date"
             />
             <br>
+            <p>Time:</p>
+            <input
+              required
+              type="time" id="time-input"
+              name="time"
+              min="09:00" max="16:00"
+            />
+            <br>
             <center>
               <button class="btn btn-outline-primary btn-sm">Checkout</button>
               <p class="checkout-desc">After clicking checkout check your email for your order confirmation.</p>
@@ -102,7 +110,7 @@ title: order
 
   <br>
   {% assign ordered_categories = site.categories | sort: "order" %}
-  
+
   {% assign closed_flag = true %}
 
   {%- for category in ordered_categories -%}
