@@ -1,6 +1,6 @@
 ---
 title: Chicken Samosas
-price: "2800"
+price: 3,200
 image: /images/upload/chicken-samosa.png
 options:
   - Deep-fried
