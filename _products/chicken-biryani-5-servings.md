@@ -1,6 +1,6 @@
 ---
 title: Biryani
-price: 12,500
+price: 15,000
 image: /images/upload/biryani.jpeg
 options:
   - Chicken
