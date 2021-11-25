@@ -1,6 +1,6 @@
 ---
 title: Prawn Samosas
-price: "2800"
+price: 3,200
 image: /images/upload/prawn-samosa.png
 options:
   - Deep Fried
