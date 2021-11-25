@@ -1,6 +1,6 @@
 ---
 title: Veggie Samosas
-price: 1,800
+price: 2,200
 image: /images/upload/veggie-samosas.png
 options:
   - Deep-fried
