@@ -1,6 +1,6 @@
 ---
 title: Vermicelli (med)
-price: "5000"
+price: 6,000
 image: /images/upload/vermicelli.jpg
 options: []
 spiciness: []
