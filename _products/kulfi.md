@@ -1,6 +1,6 @@
 ---
 title: Kulfi
-price: 5,300
+price: 6,500
 image: /images/upload/kulfi.png
 options:
   - Cardamom
