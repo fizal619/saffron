@@ -1,6 +1,6 @@
 ---
 title: Tandoori Chicken Nuggets
-price: 6,300
+price: 6,800
 image: /images/upload/tandoori-chicken-nuggets.png
 options: []
 spiciness:
