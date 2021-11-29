@@ -1,6 +1,6 @@
 ---
 title: Sirnee (med)
-price: "5000"
+price: 6,000
 image: /images/upload/sirnee-2.jpg
 options: []
 spiciness: []
