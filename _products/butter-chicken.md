@@ -1,6 +1,6 @@
 ---
 title: Butter Chicken
-price: 12,500
+price: 15,000
 image: /images/upload/butter-chicken.jpg
 options:
   - Steamed Rice
