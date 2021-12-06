@@ -4,26 +4,27 @@ layout: contact
 title: Contact Us
 ---
 
-**Order now:**
 
-[https://saffroncateringgy.com/menu](https://saffroncateringgy.com/menu)
+**Order now**
 
-**Connect with us on:**
+<https://saffroncateringgy.com/menu>
 
-Instagram - [https://www.instagram.com/saffroncatering.gy/](https://www.instagram.com/saffroncatering.gy/)
+**Connect with us on**
 
-Facebook - [https://www.facebook.com/saffroncatering592/](https://www.facebook.com/saffroncatering592/)
+Instagram - <https://www.instagram.com/saffroncatering.gy/>
 
-**Leave us a review on:**
+Facebook - <https://www.facebook.com/saffroncatering592/>
 
-Google - [https://g.co/kgs/mJ4e3Y](https://g.co/kgs/mJ4e3Y)
+**Leave us a review on**
 
-Instagram - [https://www.instagram.com/saffroncatering.gy/](https://www.instagram.com/saffroncatering.gy/)
+Google - <https://g.co/kgs/mJ4e3Y>
 
-Facebook - [https://www.facebook.com/saffroncatering592/](https://www.facebook.com/saffroncatering592/)
+Instagram - <https://www.instagram.com/saffroncatering.gy/>
 
-**Call or message us:**
+Facebook - <https://www.facebook.com/saffroncatering592/>
 
-WhatsApp - [https://wa.me/message/DNU575YSQMGRO1](https://wa.me/message/DNU575YSQMGRO1)
+**Call or message us**
+
+WhatsApp - <https://wa.me/message/DNU575YSQMGRO1>
 
 Phone - [+592-623-5453](tel:+592-623-5453)
