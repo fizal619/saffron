@@ -3,10 +3,9 @@ permalink: /contact
 layout: contact
 title: Contact Us
 ---
-
-
-
-
+        
+             
+            
 **Connect with us on:** 
 
 [![instagram](/images/upload/5296765_camera_instagram_instagram-logo_icon.png)](https://www.instagram.com/saffroncatering.gy/)
