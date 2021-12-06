@@ -7,7 +7,7 @@ title: Contact Us
 
 <style>
 span.image { 
-  transform: translate(5px, -20px);
+  transform: translateX(5px);
   display: inline-block;
   line-height: 50px; 
   height: 48px;
