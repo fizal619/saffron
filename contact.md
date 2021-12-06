@@ -5,7 +5,7 @@ title: Contact Us
 ---
 **Connect with us on:** 
 
-![https://www.instagram.com/saffroncatering.gy/ ](/images/upload/5296765_camera_instagram_instagram-logo_icon.png)
+[![instagram](/images/upload/5296765_camera_instagram_instagram-logo_icon.png)](https://www.instagram.com/saffroncatering.gy/)
 
 ![](/images/upload/5365678_fb_facebook_facebook-logo_icon.png)
 
