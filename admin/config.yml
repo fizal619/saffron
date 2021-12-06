@@ -23,6 +23,17 @@ collections:
           - label: Content
             name: body
             widget: markdown
+      - label: Contact
+        name: contact
+        file: contact.md
+        preview_path: contact
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Content
+            name: body
+            widget: markdown
 
   - name: products # Used in routes, e.g., /admin/collections/blog
     label: Product # Used in the UI
