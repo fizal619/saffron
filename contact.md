@@ -3,6 +3,9 @@ permalink: /contact
 layout: contact
 title: Contact Us
 ---
+<br>
+<br>
+
 **Connect with us on:** 
 
 <style>
