@@ -25,6 +25,8 @@ span.image {
   </a>
 </div>
 
+<br />
+
 <div class="social">
   <a href="https://www.facebook.com/saffroncatering592/">
     <img src="/images/upload/5365678_fb_facebook_facebook-logo_icon.png" />
@@ -32,12 +34,16 @@ span.image {
   </a>
 </div>
 
+<br/>
+
 <div class="social">
   <a href="https://g.co/kgs/mJ4e3Y">
     <img src="/images/upload/7123025_logo_google_g_icon.png" />
     <span class="image"> Google </span>
   </a>
 </div>
+
+<br/>
 
 <div class="social">
   <a href="https://wa.me/message/DNU575YSQMGRO1">
