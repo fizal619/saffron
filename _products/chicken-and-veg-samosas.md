@@ -1,6 +1,6 @@
 ---
 title: Chicken & Veg Samosas
-price: 4,200
+price: "3000"
 image: /images/upload/chicken-veg-samosas.png
 options:
   - Deep-fried
