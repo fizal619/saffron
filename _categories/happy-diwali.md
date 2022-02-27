@@ -1,8 +1,8 @@
 ---
-title: Diwali Specials
-hidden: true
+title: Holi Specials
+hidden: false
 order: 1
 products:
-  - Diwali Coporate Box
-  - Diwali Sweet Treat Box
+  - Sweet & Savory Treats (Sml)
+  - Sweet & Savory Treats (Lrg)
 ---
