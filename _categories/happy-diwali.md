@@ -1,6 +1,6 @@
 ---
 title: Holi Specials
-hidden: false
+hidden: true
 order: 1
 products:
   - Veggie Biryani & Matar Paneer
