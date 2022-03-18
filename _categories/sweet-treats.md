@@ -1,6 +1,6 @@
 ---
 title: Sweet Treats
-hidden: true
+hidden: false
 order: 5
 products:
   - Mithai
