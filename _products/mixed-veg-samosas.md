@@ -1,6 +1,6 @@
 ---
 title: Mixed Veg Samosas
-price: "2000"
+price: "3000"
 image: /images/upload/mixed-veg-samosas.png
 options:
   - Deep-fried
