@@ -25,8 +25,9 @@ jobs:
       - name: Deal with deps
         run: |-
           echo "DEBUG >"
-          sudo apt-get install libmagickwand-dev
-          cat /etc/ImageMagick-6/policy.xml | sed 's/none/read,write/g' | sudo tee /etc/ImageMagick-6/policy.xml
+          sudo apt-get update
+          sudo apt-get install -y libmagickwand-dev
+          sudo sed -i 's/none/read,write/g' /etc/ImageMagick-6/policy.xml
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.7'
