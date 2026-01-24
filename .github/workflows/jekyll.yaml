@@ -28,9 +28,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libmagickwand-dev
           sudo sed -i 's/none/read,write/g' /etc/ImageMagick-6/policy.xml
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7'
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - run: |-
           bundle install --path vendor/bundle --jobs 4 --retry 3
