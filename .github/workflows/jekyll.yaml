@@ -5,15 +5,14 @@ on:
     branches:
       - master
 
+concurrency:
+  group: main-deploy-job
+  cancel-in-progress: true
+
 jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.6.0
-        with:
-          access_token: ${{ secrets.JEKYLL_PAT }}
-
       - uses: actions/checkout@v4
 
         # Use GitHub Actions' cache to shorten build times and decrease load on servers
@@ -46,10 +45,11 @@ jobs:
       - run: ls
 
       - name: Deploy to GitHub Pages
-        uses: Cecilapp/GitHub-Pages-deploy@2.0.1
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        with:
+          email: fizal.sarif@gmail.com      # required
+          build_dir: _site                # "_site" by default
+          cname: saffron.fizal.me         # empty by default
+          jekyll: yes                     # "no" by default
         env:
-          EMAIL: fizal.sarif@gmail.com
-          GH_TOKEN: ${{ secrets.JEKYLL_PAT }}
-          BUILD_DIR: _site
-          CNAME: saffron.fizal.me
-          JEKYLL_SITE: YES
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
