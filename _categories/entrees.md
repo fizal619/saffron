@@ -1,6 +1,6 @@
 ---
 title: Entrees
-hidden: true
+hidden: false
 order: 4
 products:
   - Butter Chicken

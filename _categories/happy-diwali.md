@@ -1,6 +1,6 @@
 ---
 title: Holi Specials
-hidden: true
+hidden: false
 order: 1
 products:
   - Diwali Sweet Treat Box
