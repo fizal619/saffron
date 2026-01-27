@@ -26,6 +26,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - run: |-
+          NOKOGIRI_USE_SYSTEM_LIBRARIES=1 bundle update --conservative nokogiri --jobs 4 --retry 3
           bundle install --jobs 4 --retry 3
 
       - run: bundle exec jekyll build
