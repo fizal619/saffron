@@ -14,31 +14,41 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Deal with deps
         run: |-
-          echo "DEBUG >"
           sudo apt-get update
           sudo apt-get install -y libmagickwand-dev
           sudo sed -i 's/none/read,write/g' /etc/ImageMagick-6/policy.xml
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7'
-          bundler-cache: false # runs 'bundle install' and caches installed gems automatically
+          bundler-cache: false # Manual caching requested
 
-      - run: |-
-          NOKOGIRI_USE_SYSTEM_LIBRARIES=1 bundle update --conservative nokogiri --jobs 4 --retry 3
+      # --- START MANUAL CACHE ---
+      - name: Cache Ruby Gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Install dependencies
+        run: |
+          bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
+      # --- END MANUAL CACHE ---
 
       - run: bundle exec jekyll build
-
-      - run: ls
 
       - name: Deploy to GitHub Pages
         uses: Cecilapp/GitHub-Pages-deploy@v3
         with:
-          email: fizal.sarif@gmail.com      # required
-          build_dir: _site                # "_site" by default
-          cname: saffron.fizal.me         # empty by default
-          jekyll: yes                     # "no" by default
+          email: fizal.sarif@gmail.com
+          build_dir: _site
+          cname: saffron.fizal.me
+          jekyll: yes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
