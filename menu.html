@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saffron Catering</title>
+  <meta name="robots" content="noindex">
   <link rel="icon" href="/images/icon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
@@ -150,19 +151,1376 @@
   <br>
   
 
-  <div style="text-align: center;" class="row d-flex justify-content-center">
-    <div class="col-xs-12 col-md-6">
-      
-        <div>
+  
+
+    
+
+    <h2>Holi Specials</h2>
+    <br>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div id="happy-diwali-holi-sweet-treats-card" class="product-card">
+            <span class="price">$1000</span>
+            <img src="/assets/715c83-24de5e6a2a61fc4fd367f25dc90aed9195c150e4efa582a7b62740c04c89248b.png">
+            <p class="title">Diwali Sweet Treat Box</p>
+            <p class="desc">Burfi, Gulab Jamun, Peera, Parsad, Mithai & Samosa. (Single serving) Available on Wednesday 3rd, and Thursday 4th November. (Delivery unavailable for both dates)</p><script>
+  document.querySelector("#happy-diwali-holi-sweet-treats-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="holi-sweet-treats-modal" class="product-modal-container">
+          <img src="/assets/ab8ec7-9cd702e68dfe76fdf86ac0e9a84b96ca96f2c2d483a32afb938b4106b270825c.png">
+          <span class="modal-title"> Diwali Sweet Treat Box - $1000</span>
           <br>
-          <img src="/images/kitchen_closed.jpg" alt="kitcen closed" width="350px">
-          <br>
-          <br>
-          <p>
-            <b>Sorry! The kitchen's closed.<br/>Check back later.</b>
-          </p>
-          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Burfi, Gulab Jamun, Peera, Parsad, Mithai & Samosa. (Single serving) Available on Wednesday 3rd, and Thursday 4th November. (Delivery unavailable for both dates)</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Diwali Sweet Treat Box">
+              <input type="hidden" name="price" value="1000">
+            </form>
+            <center>
+              <button id="holi-sweet-treats-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
         </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#holi-sweet-treats-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="happy-diwali-eid-sweet-2-card" class="product-card">
+            <span class="price">$800</span>
+            <img src="/assets/d120c1-74790c21c486d68d983f1ac3412ffccaaba03a6643c8a11f4e2f5dc0ecf7349d.jpg">
+            <p class="title">Eid Sweets (sml)</p>
+            <p class="desc">Burfi, Gulab Jamun, Mithai, Peera (single serving)</p><script>
+  document.querySelector("#happy-diwali-eid-sweet-2-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="eid-sweet-2-modal" class="product-modal-container">
+          <img src="/assets/a64333-d306d3ada59e5a3881b0eca00ff94019a4c50b859d14fea1d8bbf89187809cec.jpg">
+          <span class="modal-title"> Eid Sweets (sml) - $800</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Burfi, Gulab Jamun, Mithai, Peera (single serving)</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Eid Sweets (sml)">
+              <input type="hidden" name="price" value="800">
+            </form>
+            <center>
+              <button id="eid-sweet-2-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#eid-sweet-2-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="happy-diwali-eid-sweets-1-card" class="product-card">
+            <span class="price">$1000</span>
+            <img src="/assets/d120c1-74790c21c486d68d983f1ac3412ffccaaba03a6643c8a11f4e2f5dc0ecf7349d.jpg">
+            <p class="title">Eid Sweets (med)</p>
+            <p class="desc">Burfi, Gulab Jamun, Peera, Mithai, Sirnee, Vermicelli (single serving)</p><script>
+  document.querySelector("#happy-diwali-eid-sweets-1-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="eid-sweets-1-modal" class="product-modal-container">
+          <img src="/assets/a64333-d306d3ada59e5a3881b0eca00ff94019a4c50b859d14fea1d8bbf89187809cec.jpg">
+          <span class="modal-title"> Eid Sweets (med) - $1000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Burfi, Gulab Jamun, Peera, Mithai, Sirnee, Vermicelli (single serving)</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Eid Sweets (med)">
+              <input type="hidden" name="price" value="1000">
+            </form>
+            <center>
+              <button id="eid-sweets-1-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#eid-sweets-1-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="happy-diwali-sweet-savory-treats-lrg-card" class="product-card">
+            <span class="price">$1000</span>
+            <img src="/assets/d120c1-74790c21c486d68d983f1ac3412ffccaaba03a6643c8a11f4e2f5dc0ecf7349d.jpg">
+            <p class="title">Sweet & Savory Treats (Lrg)</p>
+            <p class="desc">6 pholourie w/ sour, 4 mithai, 2 peera, 2 potato ball w/ sour, 1 gulab jamun, 1 barfi</p><script>
+  document.querySelector("#happy-diwali-sweet-savory-treats-lrg-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="sweet-savory-treats-lrg-modal" class="product-modal-container">
+          <img src="/assets/a64333-d306d3ada59e5a3881b0eca00ff94019a4c50b859d14fea1d8bbf89187809cec.jpg">
+          <span class="modal-title"> Sweet & Savory Treats (Lrg) - $1000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">6 pholourie w/ sour, 4 mithai, 2 peera, 2 potato ball w/ sour, 1 gulab jamun, 1 barfi</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Sweet & Savory Treats (Lrg)">
+              <input type="hidden" name="price" value="1000">
+            </form>
+            <center>
+              <button id="sweet-savory-treats-lrg-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#sweet-savory-treats-lrg-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="happy-diwali-holi-sweet-savory-treats-card" class="product-card">
+            <span class="price">$500</span>
+            <img src="/assets/d120c1-74790c21c486d68d983f1ac3412ffccaaba03a6643c8a11f4e2f5dc0ecf7349d.jpg">
+            <p class="title">Sweet & Savory Treats (Sml)</p>
+            <p class="desc">6 pholourie w/ sour, 4 mithai, & 2 peera</p><script>
+  document.querySelector("#happy-diwali-holi-sweet-savory-treats-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="holi-sweet-savory-treats-modal" class="product-modal-container">
+          <img src="/assets/a64333-d306d3ada59e5a3881b0eca00ff94019a4c50b859d14fea1d8bbf89187809cec.jpg">
+          <span class="modal-title"> Sweet & Savory Treats (Sml) - $500</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">6 pholourie w/ sour, 4 mithai, & 2 peera</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Sweet & Savory Treats (Sml)">
+              <input type="hidden" name="price" value="500">
+            </form>
+            <center>
+              <button id="holi-sweet-savory-treats-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#holi-sweet-savory-treats-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div></div>
+    <br>
+
+    
+
+    
+
+    <h2>Appetizers</h2>
+    <br>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div id="snackables-tandoori-chicken-nuggets-card" class="product-card">
+            <span class="price">$6000</span>
+            <img src="/assets/be8c6b-cfba4ee31e22b5fbeb6fbaf0410e19628821a70e64a738e8e14c0aa085c1155c.png">
+            <p class="title">Tandoori Chicken Nuggets</p>
+            <p class="desc">20pcs served with raita. (gluten-free, optional dairy) *12hr lead time*</p><script>
+  document.querySelector("#snackables-tandoori-chicken-nuggets-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="tandoori-chicken-nuggets-modal" class="product-modal-container">
+          <img src="/assets/c57352-9c2ff4da847105937ff2184b19f46073121ca4e82ae6db02ab152aa6f522014d.png">
+          <span class="modal-title"> Tandoori Chicken Nuggets - $6000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">20pcs served with raita. (gluten-free, optional dairy) *12hr lead time*</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Tandoori Chicken Nuggets">
+              <input type="hidden" name="price" value="6000">
+            </form>
+            <center>
+              <button id="tandoori-chicken-nuggets-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#tandoori-chicken-nuggets-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="snackables-tandoori-paneer-nuggets-card" class="product-card">
+            <span class="price">$6000</span>
+            <img src="/assets/61d060-3a967bd4c60a380fdd2b51e324563ea67cef23d585ef4fb067f52d5fe466efdf.png">
+            <p class="title">Tandoori Paneer Nuggets</p>
+            <p class="desc">20pcs served with raita. (gluten-free, contains dairy) *12hr lead time*</p><script>
+  document.querySelector("#snackables-tandoori-paneer-nuggets-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="tandoori-paneer-nuggets-modal" class="product-modal-container">
+          <img src="/assets/88f2ce-12e27103c17cb2a5dfc326974eeba54af3a265f2b48b33a36298e86f0bad34c1.png">
+          <span class="modal-title"> Tandoori Paneer Nuggets - $6000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">20pcs served with raita. (gluten-free, contains dairy) *12hr lead time*</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Tandoori Paneer Nuggets">
+              <input type="hidden" name="price" value="6000">
+            </form>
+            <center>
+              <button id="tandoori-paneer-nuggets-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#tandoori-paneer-nuggets-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="snackables-besan-pakora-18-card" class="product-card">
+            <span class="price">$5500</span>
+            <img src="/assets/1c0b90-05a8feea7d55b80d163bf5e798fb27357a6efa77a0a51d928344aa94410c7c98.jpg">
+            <p class="title">Besan Pakora </p>
+            <p class="desc">20pcs served with sweet tamarind chutney.</p><script>
+  document.querySelector("#snackables-besan-pakora-18-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="besan-pakora-18-modal" class="product-modal-container">
+          <img src="/assets/4bd124-a258e0218e3b93dd23b30e9a5a7c140babc1ac29cb9366889dd13e99d4d21f8c.jpg">
+          <span class="modal-title"> Besan Pakora  - $5500</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">20pcs served with sweet tamarind chutney.</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Onion" name="option" value="Onion">
+                  <label class="label" for="Onion"> Onion </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Baigan" name="option" value="Baigan">
+                  <label class="label" for="Baigan"> Baigan </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spinach" name="option" value="Spinach">
+                  <label class="label" for="Spinach"> Spinach </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Plain" name="option" value="Plain">
+                  <label class="label" for="Plain"> Plain </label>
+                </div>
+                <br>
+              <div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Besan Pakora ">
+              <input type="hidden" name="price" value="5500">
+            </form>
+            <center>
+              <button id="besan-pakora-18-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#besan-pakora-18-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div></div>
+    <br>
+
+    
+
+    
+
+    <h2>Entrees</h2>
+    <br>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div id="entrees-butter-chicken-card" class="product-card">
+            <span class="price">$15000</span>
+            <img src="/assets/a75af0-1d51ded1043130e78b750a917b4986ffb7c4f6b1b59c4abb29da5a69a6b098c2.jpg">
+            <p class="title">Butter Chicken</p>
+            <p class="desc">Boneless chicken served in a mild, sweet, spicy, creamy, and absolutely heavenly butter sauce. (serves 5)</p><script>
+  document.querySelector("#entrees-butter-chicken-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="butter-chicken-modal" class="product-modal-container">
+          <img src="/assets/e56339-5d79e867bd835a05816d4b27361c92d59ab4240190a2aeb74944c5800a58023e.jpg">
+          <span class="modal-title"> Butter Chicken - $15000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Boneless chicken served in a mild, sweet, spicy, creamy, and absolutely heavenly butter sauce. (serves 5)</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="SteamedRice" name="option" value="Steamed Rice">
+                  <label class="label" for="SteamedRice"> Steamed Rice </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Chapati" name="option" value="Chapati">
+                  <label class="label" for="Chapati"> Chapati </label>
+                </div>
+                <br>
+              <div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Butter Chicken">
+              <input type="hidden" name="price" value="15000">
+            </form>
+            <center>
+              <button id="butter-chicken-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#butter-chicken-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="entrees-chicken-biryani-5-servings-card" class="product-card">
+            <span class="price">$15000</span>
+            <img src="/assets/44e137-0e5a1ed72f7f45598bfbd88e24f8a69b4ef8c98406fdec601b8d9dae13d08523.jpg">
+            <p class="title">Biryani</p>
+            <p class="desc">Exotic spiced rice and meat dish. (serves 5)</p><script>
+  document.querySelector("#entrees-chicken-biryani-5-servings-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="chicken-biryani-5-servings-modal" class="product-modal-container">
+          <img src="/assets/f1ddc3-3f118777722f3bf983067cfb1c18adac732a89e64d7487af8bd434cca4cdb0ff.jpg">
+          <span class="modal-title"> Biryani - $15000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Exotic spiced rice and meat dish. (serves 5)</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Chicken" name="option" value="Chicken">
+                  <label class="label" for="Chicken"> Chicken </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Veggie" name="option" value="Veggie">
+                  <label class="label" for="Veggie"> Veggie </label>
+                </div>
+                <br>
+              <div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Biryani">
+              <input type="hidden" name="price" value="15000">
+            </form>
+            <center>
+              <button id="chicken-biryani-5-servings-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#chicken-biryani-5-servings-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="entrees-matar-paneer-card" class="product-card">
+            <span class="price">$10000</span>
+            <img src="/assets/92dce7-fdd7fcb332d0d0801f06808235e4431caaafcc219094b44fd7ec7182598085d9.jpg">
+            <p class="title">Matar Paneer</p>
+            <p class="desc">Paneer and green peas served in a sweet, spicy, and creamy sauce. (serves 5)</p><script>
+  document.querySelector("#entrees-matar-paneer-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="matar-paneer-modal" class="product-modal-container">
+          <img src="/assets/263041-df4ecbdb20a7b2a6a222c859f650e96c473bd69946dc9e31fc594ab4a5382f98.jpg">
+          <span class="modal-title"> Matar Paneer - $10000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Paneer and green peas served in a sweet, spicy, and creamy sauce. (serves 5)</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="SteamedRice" name="option" value="Steamed Rice">
+                  <label class="label" for="SteamedRice"> Steamed Rice </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Chapati" name="option" value="Chapati">
+                  <label class="label" for="Chapati"> Chapati </label>
+                </div>
+                <br>
+              <div class="options-group" >
+                  <input required type="radio" id="Mild" name="spiciness" value="Mild">
+                  <label class="label" for="Mild"> Mild </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Spicy" name="spiciness" value="Spicy">
+                  <label class="label" for="Spicy"> Spicy </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="ExtraSpicy" name="spiciness" value="Extra Spicy">
+                  <label class="label" for="ExtraSpicy"> Extra Spicy </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Matar Paneer">
+              <input type="hidden" name="price" value="10000">
+            </form>
+            <center>
+              <button id="matar-paneer-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#matar-paneer-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="entrees-naan-card" class="product-card">
+            <span class="price">$2500</span>
+            <img src="/assets/0f9d41-1134d1d9a62aa2025521012032db96b132bace91f2b528d0e484b877a1e16095.jpg">
+            <p class="title">Naan</p>
+            <p class="desc"> Fluffy leavened Indian flat bread. (5 large naan) </p><script>
+  document.querySelector("#entrees-naan-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="naan-modal" class="product-modal-container">
+          <img src="/assets/2d79f3-7cdeef07b523fb8aea6666d0b893fd727c6c4164488fbe6c91c0ecf430d1a8f1.jpg">
+          <span class="modal-title"> Naan - $2500</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc"> Fluffy leavened Indian flat bread. (5 large naan) </p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Plain" name="option" value="Plain">
+                  <label class="label" for="Plain"> Plain </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Butter" name="option" value="Butter">
+                  <label class="label" for="Butter"> Butter </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Garlic" name="option" value="Garlic">
+                  <label class="label" for="Garlic"> Garlic </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Naan">
+              <input type="hidden" name="price" value="2500">
+            </form>
+            <center>
+              <button id="naan-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#naan-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div></div>
+    <br>
+
+    
+
+    
+
+    <h2>Sweet Treats</h2>
+    <br>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-mithai-card" class="product-card">
+            <span class="price">$2600</span>
+            <img src="/assets/3b9845-4205dc99cdeeece36d4b3ec90196d70e74b5c69e560861e0d78811439aed1341.png">
+            <p class="title">Mithai</p>
+            <p class="desc">24 pieces / 1lb (contains wheat & dairy)</p><script>
+  document.querySelector("#sweet-treats-mithai-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="mithai-modal" class="product-modal-container">
+          <img src="/assets/1ef7a1-d63e90162bcb3346f8a35006a44a7a2b49bee4f4d7b0612e28d911a6615530ab.png">
+          <span class="modal-title"> Mithai - $2600</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">24 pieces / 1lb (contains wheat & dairy)</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Mithai">
+              <input type="hidden" name="price" value="2600">
+            </form>
+            <center>
+              <button id="mithai-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#mithai-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-gulab-jamun-card" class="product-card">
+            <span class="price">$2400</span>
+            <img src="/assets/943075-21299cfbb172c1376b15c6c51d9aa0d711e513f8e5569481f831f13dced83ddc.png">
+            <p class="title">Gulab Jamun</p>
+            <p class="desc">12pcs (gluten-free, contains dairy)</p><script>
+  document.querySelector("#sweet-treats-gulab-jamun-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="gulab-jamun-modal" class="product-modal-container">
+          <img src="/assets/5bc017-4ff1606a1ea65744ea23c4fcca311fccc23a2fc9bced8f7674d67a3cea2231d4.png">
+          <span class="modal-title"> Gulab Jamun - $2400</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">12pcs (gluten-free, contains dairy)</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Gulab Jamun">
+              <input type="hidden" name="price" value="2400">
+            </form>
+            <center>
+              <button id="gulab-jamun-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#gulab-jamun-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-peera-card" class="product-card">
+            <span class="price">$3000</span>
+            <img src="/assets/4b2eb5-c758a78eb3e6adde90381e72d4c8a9a5c92e6353242bb2a4e6e87f0038909ba4.png">
+            <p class="title">Peera</p>
+            <p class="desc">12 pieces (contains dairy)</p><script>
+  document.querySelector("#sweet-treats-peera-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="peera-modal" class="product-modal-container">
+          <img src="/assets/742a32-1c46bf7374042cbc3914771b3d6cc1cad0aa17dc28b8510ddfb9b2f8b148d697.png">
+          <span class="modal-title"> Peera - $3000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">12 pieces (contains dairy)</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Peera">
+              <input type="hidden" name="price" value="3000">
+            </form>
+            <center>
+              <button id="peera-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#peera-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-burfi-card" class="product-card">
+            <span class="price">$3800</span>
+            <img src="/assets/19964e-def9fa5a9698b4ce277a8534a52ed5f372e960ea62e719f7ac6ad38425ea7923.png">
+            <p class="title">Burfi</p>
+            <p class="desc">15pcs (gluten-free, contains dairy)</p><script>
+  document.querySelector("#sweet-treats-burfi-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="burfi-modal" class="product-modal-container">
+          <img src="/assets/6511ed-f55e5bab511dea24ba86a3f706d35a214ecaa7683bc9470b9915bb484e80b6d0.png">
+          <span class="modal-title"> Burfi - $3800</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">15pcs (gluten-free, contains dairy)</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Burfi">
+              <input type="hidden" name="price" value="3800">
+            </form>
+            <center>
+              <button id="burfi-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#burfi-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-kulfi-card" class="product-card">
+            <span class="price">$6500</span>
+            <img src="/assets/7d53e8-547b7b44e4190eea1059c8b6a1502a66521e1236b2363eefc68e46acbd62f882.png">
+            <p class="title">Kulfi</p>
+            <p class="desc">Indian ice-cream (Gluten-free, contains dairy, nuts are optional)</p><script>
+  document.querySelector("#sweet-treats-kulfi-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="kulfi-modal" class="product-modal-container">
+          <img src="/assets/d4400d-5ef36cc1909450b976fb4dcfe1495fe1d17f543ddbb524ee1fffc60b994a2c6a.png">
+          <span class="modal-title"> Kulfi - $6500</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Indian ice-cream (Gluten-free, contains dairy, nuts are optional)</p>
+            
+            <form id="-form"><div class="options-group" >
+                  <input required type="radio" id="Cardamom" name="option" value="Cardamom">
+                  <label class="label" for="Cardamom"> Cardamom </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Pistachio" name="option" value="Pistachio">
+                  <label class="label" for="Pistachio"> Pistachio </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Rose" name="option" value="Rose">
+                  <label class="label" for="Rose"> Rose </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="MasalaChai" name="option" value="Masala Chai">
+                  <label class="label" for="MasalaChai"> Masala Chai </label>
+                </div><div class="options-group" >
+                  <input required type="radio" id="Rum" name="option" value="Rum">
+                  <label class="label" for="Rum"> Rum </label>
+                </div>
+                <br>
+              
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Kulfi">
+              <input type="hidden" name="price" value="6500">
+            </form>
+            <center>
+              <button id="kulfi-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#kulfi-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-beshan-ladoo-card" class="product-card">
+            <span class="price">$7500</span>
+            <img src="/assets/832705-d0a8dd3786c7b6b5ad5ce025160a0ee9b39ccdd1dd8f92a0de0d7e6cac3be561.png">
+            <p class="title">Besan Ladoo</p>
+            <p class="desc">24pcs (gluten & dairy free)</p><script>
+  document.querySelector("#sweet-treats-beshan-ladoo-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="beshan-ladoo-modal" class="product-modal-container">
+          <img src="/assets/16f831-67a9362c45559d3da20cf608b646ef001fa4aa6256ea344b6baad54c3c7d2079.png">
+          <span class="modal-title"> Besan Ladoo - $7500</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">24pcs (gluten & dairy free)</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Besan Ladoo">
+              <input type="hidden" name="price" value="7500">
+            </form>
+            <center>
+              <button id="beshan-ladoo-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#beshan-ladoo-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-rasmalai-card" class="product-card">
+            <span class="price">$12000</span>
+            <img src="/assets/0ce1af-2d15b6a19f78f897fead9ad48a6853278f3f309077b38a52a20358e3c6e62f96.png">
+            <p class="title">Rasmalai</p>
+            <p class="desc">24pcs (gluten-free, contains milks & nuts)</p><script>
+  document.querySelector("#sweet-treats-rasmalai-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="rasmalai-modal" class="product-modal-container">
+          <img src="/assets/374044-99d942de0efa37c8fd4fdc0323cc54f81f3b797927aec1a614b0563da098f161.png">
+          <span class="modal-title"> Rasmalai - $12000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">24pcs (gluten-free, contains milks & nuts)</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Rasmalai">
+              <input type="hidden" name="price" value="12000">
+            </form>
+            <center>
+              <button id="rasmalai-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#rasmalai-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-sirnee-med-card" class="product-card">
+            <span class="price">$6000</span>
+            <img src="/assets/a0ff08-9ae365d276e2f3b552f5865be7c238ce7f0717cd06af3c75214726633318be19.jpg">
+            <p class="title">Sirnee (med)</p>
+            <p class="desc">Traditional Muslim sweet with cherries. </p><script>
+  document.querySelector("#sweet-treats-sirnee-med-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="sirnee-med-modal" class="product-modal-container">
+          <img src="/assets/72ae9f-53908aebb48fdc58e4bf647ae63543d1e0eb721cc29d39e4cedc25f9379333d0.jpg">
+          <span class="modal-title"> Sirnee (med) - $6000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Traditional Muslim sweet with cherries. </p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Sirnee (med)">
+              <input type="hidden" name="price" value="6000">
+            </form>
+            <center>
+              <button id="sirnee-med-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#sirnee-med-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-sirnee-lrg-card" class="product-card">
+            <span class="price">$12000</span>
+            <img src="/assets/a0ff08-9ae365d276e2f3b552f5865be7c238ce7f0717cd06af3c75214726633318be19.jpg">
+            <p class="title">Sirnee (lrg)</p>
+            <p class="desc">Traditional Muslim sweet with cherries. </p><script>
+  document.querySelector("#sweet-treats-sirnee-lrg-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="sirnee-lrg-modal" class="product-modal-container">
+          <img src="/assets/72ae9f-53908aebb48fdc58e4bf647ae63543d1e0eb721cc29d39e4cedc25f9379333d0.jpg">
+          <span class="modal-title"> Sirnee (lrg) - $12000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Traditional Muslim sweet with cherries. </p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Sirnee (lrg)">
+              <input type="hidden" name="price" value="12000">
+            </form>
+            <center>
+              <button id="sirnee-lrg-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#sirnee-lrg-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-vermicelli-med-card" class="product-card">
+            <span class="price">$6000</span>
+            <img src="/assets/e5c912-8c95c7e3c3fe9d03c292dc5f929fb47e2109beb37c33e5a47df695e90a70c354.jpg">
+            <p class="title">Vermicelli (med)</p>
+            <p class="desc">Cake vermicelli with cherries and raisins. </p><script>
+  document.querySelector("#sweet-treats-vermicelli-med-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="vermicelli-med-modal" class="product-modal-container">
+          <img src="/assets/6dd2c0-7973453b68015c2262173e348e9c8ba02cd849da723afda6bc20758cb49a782a.jpg">
+          <span class="modal-title"> Vermicelli (med) - $6000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Cake vermicelli with cherries and raisins. </p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Vermicelli (med)">
+              <input type="hidden" name="price" value="6000">
+            </form>
+            <center>
+              <button id="vermicelli-med-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#vermicelli-med-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-vermicelli-lrg-card" class="product-card">
+            <span class="price">$12000</span>
+            <img src="/assets/e5c912-8c95c7e3c3fe9d03c292dc5f929fb47e2109beb37c33e5a47df695e90a70c354.jpg">
+            <p class="title">Vermicelli (lrg)</p>
+            <p class="desc">Traditional Muslim sweet with cherries and raisins. </p><script>
+  document.querySelector("#sweet-treats-vermicelli-lrg-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="vermicelli-lrg-modal" class="product-modal-container">
+          <img src="/assets/6dd2c0-7973453b68015c2262173e348e9c8ba02cd849da723afda6bc20758cb49a782a.jpg">
+          <span class="modal-title"> Vermicelli (lrg) - $12000</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Traditional Muslim sweet with cherries and raisins. </p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Vermicelli (lrg)">
+              <input type="hidden" name="price" value="12000">
+            </form>
+            <center>
+              <button id="vermicelli-lrg-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#vermicelli-lrg-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="sweet-treats-kheer-sml-card" class="product-card">
+            <span class="price">$6500</span>
+            <img src="/assets/f5eebe-fa940399bc94dc7612c3fc70c50e67e7beef3a0b8cfe54893fc86614088e566d.jpg">
+            <p class="title">Kheer (sml)</p>
+            <p class="desc">Indian rice pudding</p><script>
+  document.querySelector("#sweet-treats-kheer-sml-card")
+    .addEventListener("click", function(){
+      const instance = basicLightbox.create(`
+        <div id="kheer-sml-modal" class="product-modal-container">
+          <img src="/assets/82768f-377cfd8b3132447dc6a77db3c5706f71d863fb4cfabc2ba115b40818f55ee1ec.jpg">
+          <span class="modal-title"> Kheer (sml) - $6500</span>
+          <br>
+          <div class="product-modal-content">
+            
+              <p class="product-desc">Indian rice pudding</p>
+            
+            <form id="-form">
+              <label for="qty">Quantity:</label>
+              <input required value="1" min="1" type="number" name="qty" class="qty" />
+              <br>
+              <label for="instructions">Special Instructions:</label> <br>
+              <textarea name="instructions"></textarea>
+              <center>
+                <button class="btn btn-outline-primary">
+                  Add to Bag
+                </button>
+              </center>
+              <input type="hidden" name="name" value="Kheer (sml)">
+              <input type="hidden" name="price" value="6500">
+            </form>
+            <center>
+              <button id="kheer-sml-close" class="btn btn-outline-primary closeBtn">
+                Close
+              </button>
+            </center>
+          </div>
+        </div>
+      `);
+      instance.show();
+      instance.element()
+        .querySelector("form")
+        .addEventListener("submit", addToBagHandler);
+      instance.element()
+        .querySelector("#kheer-sml-close")
+        .addEventListener("click", instance.close);
+    });
+</script>
+</div>
+        </div></div>
+    <br>
+
+    <div style="text-align: center;" class="row d-flex justify-content-center">
+    <div class="col-xs-12 col-md-6">
       
     </div>
   </div>
